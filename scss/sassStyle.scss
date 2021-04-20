@@ -1,0 +1,242 @@
+/*Variables*/
+$color-principal:#F471B7;
+$color-secundario:#C9A2E2;
+$color-linea:#FEBF55;
+$ancho:360px;
+$alto:640px;
+
+/*SCSS*/
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+}
+h3{
+    font-size: 15px;
+    font-weight: bold;
+}
+p{
+    font-size: 12px;
+}
+
+.navbar {
+    background-color:$color-principal;
+    height: 12.5vh;
+}
+
+.imageWrapper{
+    height: 87.5vh;
+    width: 100vw;
+    background-color: $color-principal;
+}
+
+img {
+    height: 87.5vh;
+    width: 100vw;
+    object-fit: cover; /*contain, cover, scale-down, fill, none*/
+}
+
+.nuestrosProductos {
+    padding-top: 11vh ;
+    padding-left: 4.5vh;
+    padding-right: 4.5vh;
+    h1{
+        color:$color-principal;
+    }
+}
+
+.linea {
+    border-top: solid;
+    border-width: 1px;
+    border-color:$color-linea;
+    width: 55vw;
+    margin: auto;
+    margin-top: 3.75vh;
+    margin-bottom: 3.75vh;
+    
+}
+
+.productosContenedor {
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+}
+
+.seccionProductos {
+    position: relative;
+    border: solid black;
+    border-radius: 4px;
+    height: 28.75vh;
+    width: 100%;
+    margin-bottom:4.5vh;
+    padding: 4.5vw 2.25vw 2.25vw 4.5vw;
+    h2 {
+        color:$color-principal;
+    }
+}
+
+.boton{
+    border-radius: 4px;
+    border-width: 0;
+    background-color:$color-secundario;
+    color: white;
+    font-size: 15px;
+    padding: 0 4.5vw;
+    position: absolute;
+    right: 2.25vw;
+    bottom:1.25vh;
+}
+
+.personalizados {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: teal;
+    text-align: center;
+    padding-top: 12.5vh;
+    display: flex;
+    justify-content: center;
+    h1 {
+        margin-left: 14.72vw;
+        margin-right: 14.72vw;
+        color: $color-principal;
+    }
+    button {
+        position: absolute;
+        background-color:$color-principal ;
+        bottom: 17.5vh;
+        border-radius: 4px;
+        border: none;
+        font-size: 15px;
+        color: white;
+        width: 57.78vw;
+    }
+    
+}
+
+
+ 
+
+.seccionCondiciones {
+    height: 52.5vh;
+    padding-top: 3.75vh;
+    padding-left: 9.44vw;
+    padding-right: 5vw;
+   
+    .condicionPedido {
+        margin-bottom: 3.75vh; 
+        height: 7.5vh;
+        display: grid;
+        grid-template-areas: 
+                            "icono titulo"
+                            "icono descripcion";
+        grid-template-columns: 18.33vw 67.23vw;    
+        
+        .icono {
+            grid-area: icono;
+            height: 36px/$alto*100vh;
+            width: 32px/$ancho*100vw;
+            img{
+                height: 36px/$alto*100vh;
+                width: 36px/$ancho*100vw;
+            }
+        }
+        
+        .titulo {
+            grid-area: titulo;
+        }
+        
+        .descripcion {
+            grid-area: descripcion;   
+        }
+    }
+}
+
+
+
+
+.instagramFeed{
+    height: (304px/$alto)*100vh;
+    width: 100vw;
+    background-color: $color-linea;
+    padding-left: 16px/$ancho*100vw;
+    padding-right: 17px/$ancho*100vw;
+    h1{
+        text-align: left;
+    }
+    h3{
+        text-align: right;
+    }
+  
+  
+}
+
+footer{
+    height: 320px/$alto*100vh;
+    width: 100vw;
+    background-color: lightcoral;
+    padding-top: 56px/$alto*100vh;
+    padding-bottom: 54px/$alto*100vh;
+    padding-right: 8px/$ancho*100vw;
+    padding-left: 16px/$ancho*100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    h1{
+        color:white;
+    }
+    form{
+        margin-top:40px/$alto*100vh;
+        margin-bottom:58px/$alto*100vh;
+        display:flex;
+        
+        input{
+            margin:0;
+            border:0px;
+        }
+        .inputNewsletter{
+            width:162px/$ancho*100vw; 
+            height: 36px/$alto*100vh;
+        }
+        
+        .botonNewsletter{
+            background-color: $color-secundario;
+            color:white;
+            border-radius: 0 4px 4px 0;
+            width:174px/$ancho*100vw;
+            height: 36px/$alto*100vh;
+            font-size: 15px;
+        }
+    }
+    .redesSociales{
+        position: absolute;
+        bottom: 54px/$alto*100vh;
+        height: 35px/$alto*100vh;
+        width: 132px/$ancho*100vw;
+        background-color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        img{
+            // width: 40px/$ancho*100vw;
+            height: 100%;
+            width: auto;
+            object-fit: scale-down;
+        }
+    }
+    
+
+}
