@@ -1,6 +1,7 @@
 /*Variables*/
 $color-principal:#F471B7;
-$color-secundario:#C9A2E2;
+$color-secundario:#8951AD;
+$color-titulo-secciones:#C9A2E2;
 $color-linea:#FEBF55;
 $ancho:360px;
 $alto:640px;
@@ -68,34 +69,68 @@ img {
 }
 
 .productosContenedor {
-    padding-right: 4.5vw;
-    padding-left: 4.5vw;
-}
-
-.seccionProductos {
-    position: relative;
-    border: solid black;
-    border-radius: 4px;
-    height: 28.75vh;
-    width: 100%;
-    margin-bottom:4.5vh;
-    padding: 4.5vw 2.25vw 2.25vw 4.5vw;
-    h2 {
-        color:$color-principal;
+     .seccionProductos {
+        position: relative;
+        // border: solid black;
+        border-radius: 4px;
+        height: 28.75vh;
+        width: 100%;
+        margin-bottom:4.5vh;
+        padding: 4.5vw 2.25vw 2.25vw 0;
+        .tituloSeccion{
+            height: 30px/$alto*100vh;
+            width: 281.4px/$ancho*100vw;
+            background-color: $color-titulo-secciones;
+            border-radius: 0 45px 45px 0;            
+            h2 {
+                color:white;
+                text-align: center;
+                // padding-top:4px/$alto*100vh ;
+                line-height: 30px/$alto*100vh;
+            }
+        }
+        
+        .boton{
+            border-radius: 4px;
+            border-width: 0;
+            background-color:$color-secundario;
+            color: white;
+            font-size: 15px;
+            padding: 0 4.5vw;
+            position: absolute;
+            right: 2.25vw;
+            bottom:1.25vh;
+        }
+    }
+    .tortas {
+        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .momentoDulce {
+        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .desayunos {
+        background-image: url(../assets/img/Portada-card-desayunos-meriendas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .festividades {
+        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
-.boton{
-    border-radius: 4px;
-    border-width: 0;
-    background-color:$color-secundario;
-    color: white;
-    font-size: 15px;
-    padding: 0 4.5vw;
-    position: absolute;
-    right: 2.25vw;
-    bottom:1.25vh;
-}
+
+
+
 
 .personalizados {
     position: relative;
@@ -103,23 +138,30 @@ img {
     width: 100vw;
     background-color: teal;
     text-align: center;
-    padding-top: 12.5vh;
+    padding-top: 388px/$alto*100vh;
     display: flex;
     justify-content: center;
+
+    background-image: url(../assets/img/Seccion-pedidos-personalizados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     h1 {
         margin-left: 14.72vw;
         margin-right: 14.72vw;
-        color: $color-principal;
+        color: $color-secundario;
+        font-size: 18px;
     }
     button {
         position: absolute;
         background-color:$color-principal ;
-        bottom: 17.5vh;
+        bottom: 112px/$alto*100vh;
         border-radius: 4px;
         border: none;
         font-size: 15px;
         color: white;
-        width: 57.78vw;
+        width: 240px/$ancho*100vw;
+        height: 36px/$alto*100vh;
     }
     
 }
@@ -144,18 +186,39 @@ img {
         
         .icono {
             grid-area: icono;
-            height: 36px/$alto*100vh;
-            width: 32px/$ancho*100vw;
             display: flex;
             justify-content: center;
+            align-items: center;
             img{
-                height: 100%;
-                width: auto;
+               height: 100%;
+               width: 100%;
+               fill: $color-secundario;
             }
+        }
+        .icarrito{
+            height: 32px/$alto*100vh;
+            width: 36px/$ancho*100vw;
+            
+        }
+        .ipago{
+            height: 32px/$alto*100vh;
+            width: 32px/$ancho*100vw;
+            
+        }
+        .iretiro{
+            height: 20px/$alto*100vh;
+            width: 32px/$ancho*100vw;
+            
+        }
+        .ientrega{
+            height: (32px/$alto)*100vh;
+            width: (46px/$ancho)*100vw;
+            
         }
         
         .titulo {
             grid-area: titulo;
+            color: $color-secundario;
         }
         
         .descripcion {
@@ -170,7 +233,6 @@ img {
 .instagramFeed{
     height: (304px/$alto)*100vh;
     width: 100vw;
-    background-color: $color-linea;
     padding-left: 16px/$ancho*100vw;
     padding-right: 17px/$ancho*100vw;
     h1{
@@ -179,6 +241,9 @@ img {
     h3{
         text-align: right;
     }
+    iframe{
+         height: 248px/$alto*100vh !important;
+     }
   
   
 }
@@ -186,7 +251,7 @@ img {
 footer{
     height: 320px/$alto*100vh;
     width: 100vw;
-    background-color: lightcoral;
+    background-color: rgb(54, 54, 173);
     padding-top: 56px/$alto*100vh;
     padding-bottom: 54px/$alto*100vh;
     padding-right: 8px/$ancho*100vw;
@@ -194,8 +259,11 @@ footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    background-image: url(../assets/img/Footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     h1{
         color:white;
     }
@@ -225,7 +293,7 @@ footer{
     .redesSociales{
         position: absolute;
         bottom: 54px/$alto*100vh;
-        height: 35px/$alto*100vh;
+        height: 20px/$alto*100vh;
         width: 180px/$ancho*100vw;
         
         display: flex;

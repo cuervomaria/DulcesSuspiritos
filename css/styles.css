@@ -51,31 +51,56 @@ img {
   margin-top: 3.75vh;
   margin-bottom: 3.75vh; }
 
-.productosContenedor {
-  padding-right: 4.5vw;
-  padding-left: 4.5vw; }
-
-.seccionProductos {
+.productosContenedor .seccionProductos {
   position: relative;
-  border: solid black;
   border-radius: 4px;
   height: 28.75vh;
   width: 100%;
   margin-bottom: 4.5vh;
-  padding: 4.5vw 2.25vw 2.25vw 4.5vw; }
-  .seccionProductos h2 {
-    color: #F471B7; }
+  padding: 4.5vw 2.25vw 2.25vw 0; }
+  .productosContenedor .seccionProductos .tituloSeccion {
+    height: 4.6875vh;
+    width: 78.16667vw;
+    background-color: #C9A2E2;
+    border-radius: 0 45px 45px 0; }
+    .productosContenedor .seccionProductos .tituloSeccion h2 {
+      color: white;
+      text-align: center;
+      line-height: 4.6875vh; }
+  .productosContenedor .seccionProductos .boton {
+    border-radius: 4px;
+    border-width: 0;
+    background-color: #8951AD;
+    color: white;
+    font-size: 15px;
+    padding: 0 4.5vw;
+    position: absolute;
+    right: 2.25vw;
+    bottom: 1.25vh; }
 
-.boton {
-  border-radius: 4px;
-  border-width: 0;
-  background-color: #C9A2E2;
-  color: white;
-  font-size: 15px;
-  padding: 0 4.5vw;
-  position: absolute;
-  right: 2.25vw;
-  bottom: 1.25vh; }
+.productosContenedor .tortas {
+  background-image: url(../assets/img/Portada-card-tortas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.productosContenedor .momentoDulce {
+  background-image: url(../assets/img/Portada-card-tortas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.productosContenedor .desayunos {
+  background-image: url(../assets/img/Portada-card-desayunos-meriendas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.productosContenedor .festividades {
+  background-image: url(../assets/img/Portada-card-tortas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .personalizados {
   position: relative;
@@ -83,13 +108,18 @@ img {
   width: 100vw;
   background-color: teal;
   text-align: center;
-  padding-top: 12.5vh;
+  padding-top: 60.625vh;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url(../assets/img/Seccion-pedidos-personalizados.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   .personalizados h1 {
     margin-left: 14.72vw;
     margin-right: 14.72vw;
-    color: #F471B7; }
+    color: #8951AD;
+    font-size: 18px; }
   .personalizados button {
     position: absolute;
     background-color: #F471B7;
@@ -98,7 +128,8 @@ img {
     border: none;
     font-size: 15px;
     color: white;
-    width: 57.78vw; }
+    width: 66.66667vw;
+    height: 5.625vh; }
 
 .seccionCondiciones {
   height: 52.5vh;
@@ -113,33 +144,47 @@ img {
     grid-template-columns: 18.33vw 67.23vw; }
     .seccionCondiciones .condicionPedido .icono {
       grid-area: icono;
-      height: 5.625vh;
-      width: 8.88889vw;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .seccionCondiciones .condicionPedido .icono img {
         height: 100%;
-        width: auto; }
+        width: 100%;
+        fill: #8951AD; }
+    .seccionCondiciones .condicionPedido .icarrito {
+      height: 5vh;
+      width: 10vw; }
+    .seccionCondiciones .condicionPedido .ipago {
+      height: 5vh;
+      width: 8.88889vw; }
+    .seccionCondiciones .condicionPedido .iretiro {
+      height: 3.125vh;
+      width: 8.88889vw; }
+    .seccionCondiciones .condicionPedido .ientrega {
+      height: 5vh;
+      width: 12.77778vw; }
     .seccionCondiciones .condicionPedido .titulo {
-      grid-area: titulo; }
+      grid-area: titulo;
+      color: #8951AD; }
     .seccionCondiciones .condicionPedido .descripcion {
       grid-area: descripcion; }
 
 .instagramFeed {
   height: 47.5vh;
   width: 100vw;
-  background-color: #FEBF55;
   padding-left: 4.44444vw;
   padding-right: 4.72222vw; }
   .instagramFeed h1 {
     text-align: left; }
   .instagramFeed h3 {
     text-align: right; }
+  .instagramFeed iframe {
+    height: 38.75vh !important; }
 
 footer {
   height: 50vh;
   width: 100vw;
-  background-color: lightcoral;
+  background-color: #3636ad;
   padding-top: 8.75vh;
   padding-bottom: 8.4375vh;
   padding-right: 2.22222vw;
@@ -147,7 +192,11 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-image: url(../assets/img/Footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   footer h1 {
     color: white; }
   footer form {
@@ -161,7 +210,7 @@ footer {
       width: 45vw;
       height: 5.625vh; }
     footer form .botonNewsletter {
-      background-color: #C9A2E2;
+      background-color: #8951AD;
       color: white;
       border-radius: 0 4px 4px 0;
       width: 48.33333vw;
@@ -170,7 +219,7 @@ footer {
   footer .redesSociales {
     position: absolute;
     bottom: 8.4375vh;
-    height: 5.46875vh;
+    height: 3.125vh;
     width: 50vw;
     display: flex;
     flex-direction: row;
