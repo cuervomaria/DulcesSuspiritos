@@ -7,7 +7,7 @@ body {
   .navbarC {
     display: flex;
     justify-content: flex-end;
-    transition: 1s ease-in-out;
+    transition: all .5s ease-in-out;
     background-color: #F471B7;
     height: 110px;
     position: fixed;
@@ -24,9 +24,10 @@ body {
     margin: 2%;
   }
   
-  .navbarC li:hover .desplegable{
+  .navbarC .borde:hover .desplegable{
+    display: block;
     opacity: 1;
-    transition: 2s;
+    transition: .5s ease-in-out;
   }
   
   .navbarC li ul {
@@ -62,6 +63,10 @@ body {
     opacity: 0;
     top: 30px;
   }
+
+  .navbarC .redondeado:hover .desplegable {
+    display: none;
+  }
   
   .navbarC ul .redondeado {
     border-bottom-left-radius: 5px;
@@ -79,7 +84,7 @@ body {
   }
   
   .navbarC a {
-    opacity: 1;
+    /*opacity: 1;*/
     position: relative;
   }
   
@@ -167,8 +172,85 @@ body {
     font-size: 30px;
     line-height: 40.85px;
   }
+
+  .galeria--espacio a{
+    text-decoration: none;
+    color: black;
+  }
   
   /* -------------------- Fin Galeria -------------------------- */
+
+  /* -------------------- Descripcion Galeria -------------------------- */
+
+  .descripcion--container{
+    padding-top: 10%;
+  }
+
+  .descripcion--container li{
+    list-style-type: initial;
+  }
+
+  .descripcion--container p {
+    font-size: 16px;
+    line-height: 21.79px;
+  }
+  .descripcion--container h1{
+    font-size: 30px;
+    text-align: start;
+    color: #C9A2E2;
+    font-weight: bold;
+  }
+
+  .descripcion--img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .descripcion--boton {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    border-width: 0;
+    background-color: #F471B7;
+    color: white;
+    font-size: 11px;
+  }
+  /* -------------------- Fin Descripcion Galeria -------------------------- */
+
+  /* -------------------- Banner -------------------------- */
+.banner{
+  width: 100%;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+  .banner .carro {
+    width: 3.7vw;
+    height: 7.3vh;
+    margin-left: 40% !important;
+  }
+  .banner .billetera {
+    width: 3.5vw;
+    height: 7.5vh;
+    margin-left: 40% !important;
+  }
+  .banner .manos {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+  .banner .truckk {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+  /* -------------------- Fin Banner -------------------------- */
+  /* -------------------- Carrousel Banner -------------------------- */
+  .carousel {
+    height: 150px;
+
+  }
+  /* -------------------- Fin Carrousel Banner -------------------------- */
   
   /* -------------------- Footer -------------------------- */
   
@@ -179,6 +261,12 @@ body {
   /* -------------------- Fin Footer -------------------------- */
   
   /* -------------------- Medias Queries NavBar -------------------------- */
+  @media (max-width: 1199px) {
+    .banner {
+      display: none;
+    }
+  }
+
   @media (max-width: 767.98px) { 
     .navbarC {
         display: none;
