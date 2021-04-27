@@ -36,7 +36,7 @@ img {
   /*contain, cover, scale-down, fill, none*/ }
 
 .nuestrosProductos {
-  padding-top: 11vh;
+  padding-top: 12%;
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -140,7 +140,8 @@ img {
     margin-bottom: 3.75vh;
     height: 7.5vh;
     display: grid;
-    grid-template-areas: "icono titulo" "icono descripcion";
+    grid-template-areas: "icono titulo"
+ "icono descripcion";
     grid-template-columns: 18.33vw 67.23vw; }
     .seccionCondiciones .condicionPedido .icono {
       grid-area: icono;
