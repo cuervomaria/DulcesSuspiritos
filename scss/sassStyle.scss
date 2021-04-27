@@ -6,6 +6,7 @@ $color-linea:#FEBF55;
 $ancho:360px;
 $alto:640px;
 
+
 /*SCSS*/
 * {
     margin: 0;
@@ -64,8 +65,7 @@ img {
     width: 55vw;
     margin: auto;
     margin-top: 3.75vh;
-    margin-bottom: 3.75vh;
-    
+    margin-bottom: 3.75vh;   
 }
 
 .productosContenedor {
@@ -121,16 +121,12 @@ img {
         background-position: center;
     }
     .festividades {
-        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-image: url(../assets/img/Portada-card-Festividades.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
 }
-
-
-
-
 
 .personalizados {
     position: relative;
@@ -165,9 +161,6 @@ img {
     }
     
 }
-
-
- 
 
 .seccionCondiciones {
     height: 52.5vh;
@@ -227,9 +220,6 @@ img {
     }
 }
 
-
-
-
 .instagramFeed{
     height: (304px/$alto)*100vh;
     width: 100vw;
@@ -243,15 +233,13 @@ img {
     }
     iframe{
          height: 248px/$alto*100vh !important;
-     }
-  
-  
+     } 
 }
 
 footer{
     height: 320px/$alto*100vh;
     width: 100vw;
-    background-color: rgb(54, 54, 173);
+    // background-color: rgb(54, 54, 173);
     padding-top: 56px/$alto*100vh;
     padding-bottom: 54px/$alto*100vh;
     padding-right: 8px/$ancho*100vw;
@@ -260,10 +248,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../assets/img/Footer.jpg);
+    background-image: url(../assets/img/Footer-Opacity.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(0, 0, 0, .5);
     h1{
         color:white;
     }
@@ -294,8 +283,7 @@ footer{
         position: absolute;
         bottom: 54px/$alto*100vh;
         height: 20px/$alto*100vh;
-        width: 180px/$ancho*100vw;
-        
+        width: 180px/$ancho*100vw;  
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -307,6 +295,70 @@ footer{
             object-fit: scale-down;
         }
     }
-    
+}
 
+/*SOBRE NOSOTROS - FORMULARIO*/
+
+// .bodyNosotros {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+// }
+
+.sectionMargin{
+    margin-bottom: 1px;
+}
+.sectionWrapper {
+    padding-top: 16px/$alto*100vh;
+    
+    height: 491px/$alto*100vh;
+    width: 100vw;
+    h1{
+        margin-bottom: 0;
+    }
+    .linea{
+        margin-top: 8px/$alto*100vh;
+    }
+
+    .contenido {
+        
+        display: grid;
+        grid-template-areas: 
+                "foto1 texto"
+                "foto2 texto";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-right: 16px/$ancho*100vw;
+    padding-left: 16px/$ancho*100vw;
+        
+    }
+
+    .foto1{
+        grid-area: foto1;
+        margin-bottom: 16px/$alto*100vh;
+        width:152px/$ancho*100vw;
+        border: solid black;
+        height: 189px/$alto*100vh ;
+        background-color: blue;
+        
+        img{
+            object-fit: scale-down;
+        }
+    }
+    
+    .foto2{
+        grid-area: foto2;
+        width:152px/$ancho*100vw;
+        border: solid black;
+        height: 189px/$alto*100vh ;
+        background-color: blue;
+        
+        img{
+            object-fit: scale-down;
+        }
+    }
+    .texto {
+        grid-area: texto;
+        text-align: justify;
+    }
 }

@@ -97,7 +97,7 @@ img {
   background-position: center; }
 
 .productosContenedor .festividades {
-  background-image: url(../assets/img/Portada-card-tortas.jpg);
+  background-image: url(../assets/img/Portada-card-Festividades.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -184,7 +184,6 @@ img {
 footer {
   height: 50vh;
   width: 100vw;
-  background-color: #3636ad;
   padding-top: 8.75vh;
   padding-bottom: 8.4375vh;
   padding-right: 2.22222vw;
@@ -193,10 +192,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../assets/img/Footer.jpg);
+  background-image: url(../assets/img/Footer-Opacity.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5); }
   footer h1 {
     color: white; }
   footer form {
@@ -228,3 +228,43 @@ footer {
       height: 100%;
       width: auto;
       object-fit: scale-down; }
+
+/*SOBRE NOSOTROS - FORMULARIO*/
+.sectionMargin {
+  margin-bottom: 1px; }
+
+.sectionWrapper {
+  padding-top: 2.5vh;
+  height: 76.71875vh;
+  width: 100vw; }
+  .sectionWrapper h1 {
+    margin-bottom: 0; }
+  .sectionWrapper .linea {
+    margin-top: 1.25vh; }
+  .sectionWrapper .contenido {
+    display: grid;
+    grid-template-areas: "foto1 texto" "foto2 texto";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-right: 4.44444vw;
+    padding-left: 4.44444vw; }
+  .sectionWrapper .foto1 {
+    grid-area: foto1;
+    margin-bottom: 2.5vh;
+    width: 42.22222vw;
+    border: solid black;
+    height: 29.53125vh;
+    background-color: blue; }
+    .sectionWrapper .foto1 img {
+      object-fit: scale-down; }
+  .sectionWrapper .foto2 {
+    grid-area: foto2;
+    width: 42.22222vw;
+    border: solid black;
+    height: 29.53125vh;
+    background-color: blue; }
+    .sectionWrapper .foto2 img {
+      object-fit: scale-down; }
+  .sectionWrapper .texto {
+    grid-area: texto;
+    text-align: justify; }
