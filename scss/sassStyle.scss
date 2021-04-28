@@ -1,9 +1,11 @@
 /*Variables*/
 $color-principal:#F471B7;
-$color-secundario:#C9A2E2;
+$color-secundario:#8951AD;
+$color-titulo-secciones:#C9A2E2;
 $color-linea:#FEBF55;
 $ancho:360px;
 $alto:640px;
+
 
 /*SCSS*/
 * {
@@ -36,16 +38,18 @@ p{
 }
 
 .imageWrapper{
+    margin-top: 80px;
     height: 87.5vh;
     width: 100vw;
     background-color: $color-principal;
+    img {
+        height: 87.5vh;
+        width: 100vw;
+        object-fit: cover; /*contain, cover, scale-down, fill, none*/
+    }
 }
 
-img {
-    height: 87.5vh;
-    width: 100vw;
-    object-fit: cover; /*contain, cover, scale-down, fill, none*/
-}
+
 
 .nuestrosProductos {
     padding-top: 11vh ;
@@ -63,38 +67,67 @@ img {
     width: 55vw;
     margin: auto;
     margin-top: 3.75vh;
-    margin-bottom: 3.75vh;
-    
+    margin-bottom: 3.75vh;   
 }
 
 .productosContenedor {
-    padding-right: 4.5vw;
-    padding-left: 4.5vw;
-}
-
-.seccionProductos {
-    position: relative;
-    border: solid black;
-    border-radius: 4px;
-    height: 28.75vh;
-    width: 100%;
-    margin-bottom:4.5vh;
-    padding: 4.5vw 2.25vw 2.25vw 4.5vw;
-    h2 {
-        color:$color-principal;
+     .seccionProductos {
+        position: relative;
+        // border: solid black;
+        border-radius: 4px;
+        height: 28.75vh;
+        width: 100%;
+        margin-bottom:4.5vh;
+        padding: 4.5vw 2.25vw 2.25vw 0;
+        .tituloSeccion{
+            height: 30px/$alto*100vh;
+            width: 281.4px/$ancho*100vw;
+            background-color: $color-titulo-secciones;
+            border-radius: 0 45px 45px 0;            
+            h2 {
+                color:white;
+                text-align: center;
+                // padding-top:4px/$alto*100vh ;
+                line-height: 30px/$alto*100vh;
+            }
+        }
+        
+        .boton{
+            border-radius: 4px;
+            border-width: 0;
+            background-color:$color-secundario;
+            color: white;
+            font-size: 15px;
+            padding: 0 4.5vw;
+            position: absolute;
+            right: 2.25vw;
+            bottom:1.25vh;
+        }
     }
-}
-
-.boton{
-    border-radius: 4px;
-    border-width: 0;
-    background-color:$color-secundario;
-    color: white;
-    font-size: 15px;
-    padding: 0 4.5vw;
-    position: absolute;
-    right: 2.25vw;
-    bottom:1.25vh;
+    .tortas {
+        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .momentoDulce {
+        background-image: url(../assets/img/Portada-card-momentodulce.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .desayunos {
+        background-image: url(../assets/img/Portada-card-desayunos-meriendas.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .festividades {
+        background-image: url(../assets/img/Portada-card-Festividades.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .personalizados {
@@ -103,29 +136,33 @@ img {
     width: 100vw;
     background-color: teal;
     text-align: center;
-    padding-top: 12.5vh;
+    padding-top: 388px/$alto*100vh;
     display: flex;
     justify-content: center;
+
+    background-image: url(../assets/img/Seccion-pedidos-personalizados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     h1 {
         margin-left: 14.72vw;
         margin-right: 14.72vw;
-        color: $color-principal;
+        color: $color-secundario;
+        font-size: 18px;
     }
     button {
         position: absolute;
         background-color:$color-principal ;
-        bottom: 17.5vh;
+        bottom: 112px/$alto*100vh;
         border-radius: 4px;
         border: none;
         font-size: 15px;
         color: white;
-        width: 57.78vw;
+        width: 240px/$ancho*100vw;
+        height: 36px/$alto*100vh;
     }
     
 }
-
-
- 
 
 .seccionCondiciones {
     height: 52.5vh;
@@ -144,18 +181,39 @@ img {
         
         .icono {
             grid-area: icono;
-            height: 36px/$alto*100vh;
-            width: 32px/$ancho*100vw;
             display: flex;
             justify-content: center;
+            align-items: center;
             img{
-                height: 100%;
-                width: auto;
+               height: 100%;
+               width: 100%;
+               fill: $color-secundario;
             }
+        }
+        .icarrito{
+            height: 32px/$alto*100vh;
+            width: 36px/$ancho*100vw;
+            
+        }
+        .ipago{
+            height: 32px/$alto*100vh;
+            width: 32px/$ancho*100vw;
+            
+        }
+        .iretiro{
+            height: 20px/$alto*100vh;
+            width: 32px/$ancho*100vw;
+            
+        }
+        .ientrega{
+            height: (32px/$alto)*100vh;
+            width: (46px/$ancho)*100vw;
+            
         }
         
         .titulo {
             grid-area: titulo;
+            color: $color-secundario;
         }
         
         .descripcion {
@@ -163,14 +221,30 @@ img {
         }
     }
 }
+.iconosFlotantes{
+    height: 88px/$alto*100vh;
+    width: 32px/$ancho*100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: contain;
+    position: fixed;
+    left: 24px/$ancho*100vw;
+    bottom: 24px/$alto*100vh;
+    z-index: 1;
 
+    a{
+        text-decoration: none;
+    }
 
-
-
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
 .instagramFeed{
     height: (304px/$alto)*100vh;
     width: 100vw;
-    background-color: $color-linea;
     padding-left: 16px/$ancho*100vw;
     padding-right: 17px/$ancho*100vw;
     h1{
@@ -179,14 +253,15 @@ img {
     h3{
         text-align: right;
     }
-  
-  
+    iframe{
+         height: 248px/$alto*100vh !important;
+     } 
 }
 
 footer{
     height: 320px/$alto*100vh;
     width: 100vw;
-    background-color: lightcoral;
+    // background-color: rgb(54, 54, 173);
     padding-top: 56px/$alto*100vh;
     padding-bottom: 54px/$alto*100vh;
     padding-right: 8px/$ancho*100vw;
@@ -194,8 +269,12 @@ footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    background-image: url(../assets/img/Footer-Opacity.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
     h1{
         color:white;
     }
@@ -225,9 +304,8 @@ footer{
     .redesSociales{
         position: absolute;
         bottom: 54px/$alto*100vh;
-        height: 35px/$alto*100vh;
-        width: 180px/$ancho*100vw;
-        
+        height: 20px/$alto*100vh;
+        width: 180px/$ancho*100vw;  
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -239,6 +317,105 @@ footer{
             object-fit: scale-down;
         }
     }
-    
+}
 
+/*SOBRE NOSOTROS - FORMULARIO*/
+
+// .bodyNosotros {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+// }
+
+.sectionMargin{
+    margin-bottom: 1px;
+}
+.sectionWrapper {
+    padding-top: 96px/$alto*100vh;
+    
+    height: 491px/$alto*100vh;
+    width: 100vw;
+    h1{
+        margin-bottom: 0;
+    }
+    .linea{
+        margin-top: 8px/$alto*100vh;
+    }
+
+    .contenido {
+        
+        display: grid;
+        grid-template-areas: 
+                "foto1 texto"
+                "foto2 texto";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-right: 16px/$ancho*100vw;
+    padding-left: 16px/$ancho*100vw;
+        
+    }
+
+    .foto1{
+        grid-area: foto1;
+        margin-bottom: 16px/$alto*100vh;
+        width:152px/$ancho*100vw;
+        border: solid black;
+        height: 189px/$alto*100vh ;
+        background-color: blue;
+        
+        img{
+            object-fit: scale-down;
+        }
+    }
+    
+    .foto2{
+        grid-area: foto2;
+        width:152px/$ancho*100vw;
+        border: solid black;
+        height: 189px/$alto*100vh ;
+        background-color: blue;
+        
+        img{
+            object-fit: scale-down;
+        }
+    }
+    .texto {
+        grid-area: texto;
+        text-align: justify;
+    }
+}
+
+/*------------------FORMULARIO----------------*/
+
+.formWrapper {
+    margin: 0 16px/$ancho*100vw;
+ 
+    .inputForm{
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid $color-titulo-secciones;
+        width: 100%;
+        margin-bottom: 16px/$alto*100vh;
+    }
+    textarea{
+        height:74px/$alto*100vh ;
+        width: 100%;
+        border:none;
+        border-bottom: 1px solid $color-titulo-secciones;
+        margin-bottom: 31px/$alto*100vh;
+        
+    }   
+    .botonFormulario{
+        margin-top: 32px/$alto*100vh;
+        margin-bottom: 24px/$alto*100vh;
+        width: 240px/$ancho*100vw;
+        height: 36px/$alto*100vh;
+        background-color: $color-principal;
+        color: white;
+        line-height: 36px/$alto*100vh;
+        border-radius: 4px;
+        border:none;
+       float: right;
+
+    }
 }
