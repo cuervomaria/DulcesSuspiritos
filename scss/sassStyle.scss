@@ -38,16 +38,18 @@ p{
 }
 
 .imageWrapper{
+    margin-top: 80px;
     height: 87.5vh;
     width: 100vw;
     background-color: $color-principal;
+    img {
+        height: 87.5vh;
+        width: 100vw;
+        object-fit: cover; /*contain, cover, scale-down, fill, none*/
+    }
 }
 
-img {
-    height: 87.5vh;
-    width: 100vw;
-    object-fit: cover; /*contain, cover, scale-down, fill, none*/
-}
+
 
 .nuestrosProductos {
     padding-top: 11vh ;
@@ -109,7 +111,7 @@ img {
         background-position: center;
     }
     .momentoDulce {
-        background-image: url(../assets/img/Portada-card-tortas.jpg);
+        background-image: url(../assets/img/Portada-card-momentodulce.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -219,7 +221,27 @@ img {
         }
     }
 }
+.iconosFlotantes{
+    height: 88px/$alto*100vh;
+    width: 32px/$ancho*100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: contain;
+    position: fixed;
+    left: 24px/$ancho*100vw;
+    bottom: 24px/$alto*100vh;
+    z-index: 1;
 
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
 .instagramFeed{
     height: (304px/$alto)*100vh;
     width: 100vw;
@@ -309,7 +331,7 @@ footer{
     margin-bottom: 1px;
 }
 .sectionWrapper {
-    padding-top: 16px/$alto*100vh;
+    padding-top: 96px/$alto*100vh;
     
     height: 491px/$alto*100vh;
     width: 100vw;
@@ -360,5 +382,40 @@ footer{
     .texto {
         grid-area: texto;
         text-align: justify;
+    }
+}
+
+/*------------------FORMULARIO----------------*/
+
+.formWrapper {
+    margin: 0 16px/$ancho*100vw;
+ 
+    .inputForm{
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid $color-titulo-secciones;
+        width: 100%;
+        margin-bottom: 16px/$alto*100vh;
+    }
+    textarea{
+        height:74px/$alto*100vh ;
+        width: 100%;
+        border:none;
+        border-bottom: 1px solid $color-titulo-secciones;
+        margin-bottom: 31px/$alto*100vh;
+        
+    }   
+    .botonFormulario{
+        margin-top: 32px/$alto*100vh;
+        margin-bottom: 24px/$alto*100vh;
+        width: 240px/$ancho*100vw;
+        height: 36px/$alto*100vh;
+        background-color: $color-principal;
+        color: white;
+        line-height: 36px/$alto*100vh;
+        border-radius: 4px;
+        border:none;
+       float: right;
+
     }
 }

@@ -25,18 +25,18 @@ p {
   height: 12.5vh; }
 
 .imageWrapper {
+  margin-top: 80px;
   height: 87.5vh;
   width: 100vw;
   background-color: #F471B7; }
-
-img {
-  height: 87.5vh;
-  width: 100vw;
-  object-fit: cover;
-  /*contain, cover, scale-down, fill, none*/ }
+  .imageWrapper img {
+    height: 87.5vh;
+    width: 100vw;
+    object-fit: cover;
+    /*contain, cover, scale-down, fill, none*/ }
 
 .nuestrosProductos {
-  padding-top: 12%;
+  padding-top: 11vh;
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -85,7 +85,7 @@ img {
   background-position: center; }
 
 .productosContenedor .momentoDulce {
-  background-image: url(../assets/img/Portada-card-tortas.jpg);
+  background-image: url(../assets/img/Portada-card-momentodulce.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -140,8 +140,7 @@ img {
     margin-bottom: 3.75vh;
     height: 7.5vh;
     display: grid;
-    grid-template-areas: "icono titulo"
- "icono descripcion";
+    grid-template-areas: "icono titulo" "icono descripcion";
     grid-template-columns: 18.33vw 67.23vw; }
     .seccionCondiciones .condicionPedido .icono {
       grid-area: icono;
@@ -169,6 +168,23 @@ img {
       color: #8951AD; }
     .seccionCondiciones .condicionPedido .descripcion {
       grid-area: descripcion; }
+
+.iconosFlotantes {
+  height: 13.75vh;
+  width: 8.88889vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  object-fit: contain;
+  position: fixed;
+  left: 6.66667vw;
+  bottom: 3.75vh;
+  z-index: 1; }
+  .iconosFlotantes a {
+    text-decoration: none; }
+  .iconosFlotantes img {
+    width: 100%;
+    height: auto; }
 
 .instagramFeed {
   height: 47.5vh;
@@ -235,7 +251,7 @@ footer {
   margin-bottom: 1px; }
 
 .sectionWrapper {
-  padding-top: 2.5vh;
+  padding-top: 15vh;
   height: 76.71875vh;
   width: 100vw; }
   .sectionWrapper h1 {
@@ -269,3 +285,30 @@ footer {
   .sectionWrapper .texto {
     grid-area: texto;
     text-align: justify; }
+
+/*------------------FORMULARIO----------------*/
+.formWrapper {
+  margin: 0 4.44444vw; }
+  .formWrapper .inputForm {
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #C9A2E2;
+    width: 100%;
+    margin-bottom: 2.5vh; }
+  .formWrapper textarea {
+    height: 11.5625vh;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C9A2E2;
+    margin-bottom: 4.84375vh; }
+  .formWrapper .botonFormulario {
+    margin-top: 5vh;
+    margin-bottom: 3.75vh;
+    width: 66.66667vw;
+    height: 5.625vh;
+    background-color: #F471B7;
+    color: white;
+    line-height: 5.625vh;
+    border-radius: 4px;
+    border: none;
+    float: right; }
