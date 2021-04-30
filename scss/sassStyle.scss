@@ -10,6 +10,8 @@ $alto:640px;
 /*SCSS*/
 * {
     margin: 0;
+    padding:0;
+    border:0;
 }
 
 body {
@@ -38,13 +40,16 @@ p{
 }
 
 .imageWrapper{
-    margin-top: 80px;
-    height: 87.5vh;
+    // margin-top: 80px;
+    position: relative;
+    height: 100vh;
     width: 100vw;
     background-color: $color-principal;
     img {
-        height: 87.5vh;
+        // height: 90vh;
         width: 100vw;
+        position: absolute;
+        bottom:0;
         object-fit: cover; /*contain, cover, scale-down, fill, none*/
     }
 }
@@ -52,7 +57,7 @@ p{
 
 
 .nuestrosProductos {
-    padding-top: 11vh ;
+    padding-top: 38px/$alto*100vh ;
     padding-left: 4.5vh;
     padding-right: 4.5vh;
     h1{
@@ -70,6 +75,7 @@ p{
     margin-bottom: 3.75vh;   
 }
 
+
 .productosContenedor {
      .seccionProductos {
         position: relative;
@@ -80,15 +86,15 @@ p{
         margin-bottom:4.5vh;
         padding: 4.5vw 2.25vw 2.25vw 0;
         .tituloSeccion{
-            height: 30px/$alto*100vh;
-            width: 281.4px/$ancho*100vw;
+            height: 30px;
+            width: 90%;
             background-color: $color-titulo-secciones;
             border-radius: 0 45px 45px 0;            
             h2 {
                 color:white;
                 text-align: center;
                 // padding-top:4px/$alto*100vh ;
-                line-height: 30px/$alto*100vh;
+                line-height: 30px;
             }
         }
         
@@ -98,10 +104,12 @@ p{
             background-color:$color-secundario;
             color: white;
             font-size: 15px;
-            padding: 0 4.5vw;
+            padding: 0 auto;
             position: absolute;
             right: 2.25vw;
             bottom:1.25vh;
+            height: 36px;
+            width: 91px;
         }
     }
     .tortas {
@@ -144,11 +152,11 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    h1 {
+    h2 {
         margin-left: 14.72vw;
         margin-right: 14.72vw;
         color: $color-secundario;
-        font-size: 18px;
+      
     }
     button {
         position: absolute;
@@ -158,8 +166,8 @@ p{
         border: none;
         font-size: 15px;
         color: white;
-        width: 240px/$ancho*100vw;
-        height: 36px/$alto*100vh;
+        width: 240px;
+        height: 36px;
     }
     
 }
@@ -169,6 +177,17 @@ p{
     padding-top: 3.75vh;
     padding-left: 9.44vw;
     padding-right: 5vw;
+    
+
+  .lineaArriba{
+      margin-top: 0;
+      margin-bottom: 16px/$alto*100vh;
+  }
+
+  .lineaAbajo{
+    margin-top: 16px/$alto*100vh;
+
+  }
    
     .condicionPedido {
         margin-bottom: 3.75vh; 
@@ -177,60 +196,70 @@ p{
         grid-template-areas: 
                             "icono titulo"
                             "icono descripcion";
-        grid-template-columns: 18.33vw 67.23vw;    
+        grid-template-columns: 18.33vw 67.23vw;
+        grid-template-rows: 32px 40px;
+            
         
         .icono {
             grid-area: icono;
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
-               height: 100%;
-               width: 100%;
-               fill: $color-secundario;
-            }
+            // border:solid black;
+            // background-color: burlywood;
+            // img{
+            //    height: 100%;
+            //    width: 100%;
+            //    fill: $color-secundario;
+            // }
         }
         .icarrito{
-            height: 32px/$alto*100vh;
-            width: 36px/$ancho*100vw;
+            height: 32px;
+            width: 36px;
             
         }
         .ipago{
-            height: 32px/$alto*100vh;
-            width: 32px/$ancho*100vw;
+            height: 32px;
+            width: 32px;
             
         }
         .iretiro{
-            height: 20px/$alto*100vh;
-            width: 32px/$ancho*100vw;
+            height: 20px;
+            width: 32px;
             
         }
         .ientrega{
-            height: (32px/$alto)*100vh;
-            width: (46px/$ancho)*100vw;
+            height: 32px;
+            width: 46px;
             
         }
         
         .titulo {
             grid-area: titulo;
             color: $color-secundario;
+            margin:auto 0;
+            // border:solid black;
+            h3{
+                margin-bottom: 0;
+            }
         }
         
         .descripcion {
             grid-area: descripcion;   
+            // border:solid black;
         }
     }
 }
 .iconosFlotantes{
-    height: 88px/$alto*100vh;
-    width: 32px/$ancho*100vw;
+    height: 112px;
+    width: 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     object-fit: contain;
     position: fixed;
-    left: 24px/$ancho*100vw;
-    bottom: 24px/$alto*100vh;
+    left: 16px/$ancho*100vw;
+    bottom: 16px/$alto*100vh;
     z-index: 1;
 
     a{
@@ -245,13 +274,16 @@ p{
 .instagramFeed{
     height: (304px/$alto)*100vh;
     width: 100vw;
+    margin-top: 24px/$alto*100vh;
     padding-left: 16px/$ancho*100vw;
     padding-right: 17px/$ancho*100vw;
     h1{
         text-align: left;
+        color: $color-secundario;
     }
     h3{
         text-align: right;
+        color: $color-principal;
     }
     iframe{
          height: 248px/$alto*100vh !important;
@@ -259,7 +291,7 @@ p{
 }
 
 footer{
-    height: 320px/$alto*100vh;
+    height: 320px;
     width: 100vw;
     // background-color: rgb(54, 54, 173);
     padding-top: 56px/$alto*100vh;
@@ -275,12 +307,13 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0, 0, 0, .5);
-    h1{
+    h2{
         color:white;
+        text-align: center;
     }
     form{
-        margin-top:40px/$alto*100vh;
-        margin-bottom:58px/$alto*100vh;
+        margin-top:40px;
+        margin-bottom:58px;
         display:flex;
         
         input{
@@ -288,24 +321,24 @@ footer{
             border:0px;
         }
         .inputNewsletter{
-            width:162px/$ancho*100vw; 
-            height: 36px/$alto*100vh;
+            width:176px; 
+            height: 36px;
         }
         
         .botonNewsletter{
             background-color: $color-secundario;
             color:white;
             border-radius: 0 4px 4px 0;
-            width:174px/$ancho*100vw;
-            height: 36px/$alto*100vh;
+            width:176px;
+            height: 36px;
             font-size: 15px;
         }
     }
     .redesSociales{
         position: absolute;
-        bottom: 54px/$alto*100vh;
-        height: 20px/$alto*100vh;
-        width: 180px/$ancho*100vw;  
+        bottom: 54px;
+        height: 20px;
+        width: 180px;  
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -333,10 +366,11 @@ footer{
 .sectionWrapper {
     padding-top: 96px/$alto*100vh;
     
-    height: 491px/$alto*100vh;
+    // height: 491px/$alto*100vh;
     width: 100vw;
     h1{
         margin-bottom: 0;
+        color: $color-principal;
     }
     .linea{
         margin-top: 8px/$alto*100vh;
@@ -350,8 +384,8 @@ footer{
                 "foto2 texto";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding-right: 16px/$ancho*100vw;
-    padding-left: 16px/$ancho*100vw;
+        padding-right: 16px;
+    padding-left: 16px;
         
     }
 
@@ -408,14 +442,225 @@ footer{
     .botonFormulario{
         margin-top: 32px/$alto*100vh;
         margin-bottom: 24px/$alto*100vh;
-        width: 240px/$ancho*100vw;
-        height: 36px/$alto*100vh;
+        width: 240px;
+        height: 36px;
         background-color: $color-principal;
         color: white;
-        line-height: 36px/$alto*100vh;
         border-radius: 4px;
         border:none;
        float: right;
 
+    }
+}
+
+/*--------------RESPONSIVE-----------*/
+$altoDesktop:1140px;
+$anchoDesktop:1440px;
+
+@media only screen and (min-width:768px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+
+    .imageWrapper{
+        max-width: 100vw;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .linea{
+        width: 200px;
+    }
+
+    .nuestrosProductos{
+        // padding-top: 31px/$altoDesktop*100vh;
+        padding-left: 16px/$anchoDesktop*100vw;
+        padding-right: 16px/$anchoDesktop*100vw;
+
+        .productosContenedor{
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-between;
+            justify-content: space-evenly;
+
+            .seccionProductos{
+                height:504px/$altoDesktop*100vh;
+                width:340px/$anchoDesktop*100vw;
+                margin-right: 16px/$anchoDesktop*100vw;
+                padding-top: 32px/$altoDesktop*100vh;
+                
+                .boton{
+                    background-color: $color-titulo-secciones;
+                    position: absolute;
+                    bottom:16px/$altoDesktop*100vh;
+                    right:14px/$anchoDesktop*100vw;
+                    width: 95px;
+                }
+            }
+
+            .festividades{
+                margin-right: 0;
+            }
+        }
+    }
+    
+    .seccionProductos:hover{
+        button{
+            background-color: $color-secundario !important;
+        }
+        .tituloSeccion{
+            background-color: $color-secundario;
+        }
+    }
+
+    .personalizados{
+        padding-top: 601px/$altoDesktop*100vh;
+        .tituloPersonalizado{
+            height: 175px;
+            width: 693px;
+            text-align: center;
+            margin: auto;
+
+            h2{
+                font-size: 30px;
+            }
+        }
+        button{
+            bottom:164px/$altoDesktop*100vh
+        }
+        
+    }
+
+    .seccionCondiciones {
+        padding-left: 16px/$anchoDesktop*100vw;
+        padding-right: 16px/$anchoDesktop*100vw;
+        padding-top: 56px/$altoDesktop*100vh;
+        height: 274px/$altoDesktop*100vh;
+         
+        .lineaArriba{
+            margin-bottom: 47.5px/$altoDesktop*100vh;
+        }
+
+        .lineaAbajo{
+            margin-top: 48px/$altoDesktop*100vh;
+            margin-bottom: 55.5px/$altoDesktop*100vh;  
+        }
+        .condicionesWrapper{
+            max-width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        .condicionPedido{
+        grid-template-columns: 6.67vw 17.22vw;
+        grid-template-rows: 24px 40px;
+        margin-bottom: 0;
+        p{
+            font-size: 16px;
+        }
+        }
+    }
+    .instagramFeed{
+        margin-top: 0;
+        height: 1040px/$altoDesktop*100vh;
+        padding-left: 32px/$anchoDesktop*100vw;
+        padding-right: 32px/$anchoDesktop*100vw;
+        // background-color: $color-principal;
+       
+        h3{
+            font-size: 20px;
+        }
+        iframe{
+            height: 480px/$alto*100vh !important;
+            // background-color: $color-linea;
+            
+        } 
+    }
+
+    footer {
+        padding-top: 48px/$altoDesktop*100vh;
+        padding-left: 483px/$anchoDesktop*100vw;
+        padding-right: 525px/$anchoDesktop*100vw;
+       
+        
+        
+       .tituloFooter{
+           height: 64px/$altoDesktop*100vh;
+           width: 432px/$anchoDesktop*100vw;
+           h2{
+               font-weight: 600;
+           }
+        .redesSociales{
+            height: 25px;
+        }
+           
+       }
+    }
+
+    /*---------------SOBRE NOSOTROS---------*/
+    .sectionWrapper{
+        height: 684px/$altoDesktop*100vh;
+        .contenido{
+            display: grid;
+            grid-template-areas: "foto1 texto foto2"!important;
+            grid-template-columns: 25% 50% 25% !important;
+            grid-template-rows: 455px/$altoDesktop*100vh!important;
+            border: solid black;
+            
+            .foto1{
+                grid-area:foto1;
+                width: 343px/$anchoDesktop*100vw;
+                height: 416px/$altoDesktop*100vh;
+                background-color: red;
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .foto2{
+                grid-area:foto2;
+                width: 343px/$anchoDesktop*100vw;
+                height: 416px/$altoDesktop*100vh;
+                background-color: red;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .texto {
+                grid-area: texto;
+                text-align: justify;
+                height: 416px/$altoDesktop*100vh;
+                display: flex;
+               flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+    }
+
+    .footerRow{
+        margin-top: 134px;
+    }
+
+    /*---------------FORMULARIO CONTACTO-----------*/
+
+    .formWrapper{
+        margin:0;
+        padding: 0 371px/$anchoDesktop*100vw;
+        .botonFormulario{
+            padding:0;
+        }
     }
 }
