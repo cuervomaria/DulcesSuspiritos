@@ -20,9 +20,9 @@ h3 {
 p {
   font-size: 12px; }
 
-.navbar {
+/* .navbar {
   background-color: #F471B7;
-  height: 12.5vh; }
+  height: 12.5vh; } */
 
 .imageWrapper {
   height: 87.5vh;
@@ -36,7 +36,7 @@ img {
   /*contain, cover, scale-down, fill, none*/ }
 
 .nuestrosProductos {
-  padding-top: 12%;
+  padding-top: 5%;
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -137,46 +137,53 @@ img {
   .instagramFeed h3 {
     text-align: right; }
 
-footer {
-  height: 50vh;
-  width: 100vw;
-  background-color: lightcoral;
-  padding-top: 8.75vh;
-  padding-bottom: 8.4375vh;
-  padding-right: 2.22222vw;
-  padding-left: 4.44444vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  footer h1 {
-    color: white; }
-  footer form {
-    margin-top: 6.25vh;
-    margin-bottom: 9.0625vh;
-    display: flex; }
-    footer form input {
-      margin: 0;
-      border: 0px; }
-    footer form .inputNewsletter {
-      width: 45vw;
-      height: 5.625vh; }
-    footer form .botonNewsletter {
-      background-color: #C9A2E2;
-      color: white;
-      border-radius: 0 4px 4px 0;
-      width: 48.33333vw;
-      height: 5.625vh;
-      font-size: 15px; }
-  footer .redesSociales {
-    position: absolute;
-    bottom: 8.4375vh;
-    height: 5.46875vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    footer .redesSociales img {
-      height: 100%;
-      width: auto;
-      object-fit: scale-down; }
+    footer {
+      height: 50vh;
+      width: 100vw;
+      padding-top: 8.75vh;
+      padding-bottom: 8.4375vh;
+      padding-right: 2.22222vw;
+      padding-left: 4.44444vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(../assets/img/Footer-Opacity.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.5); }
+      footer h1 {
+        color: white; }
+      footer form {
+        margin-top: 6.25vh;
+        margin-bottom: 9.0625vh;
+        display: flex; }
+        footer form input {
+          margin: 0;
+          border: 0px; }
+        footer form .inputNewsletter {
+          width: 45vw;
+          height: 5.625vh; }
+        footer form .botonNewsletter {
+          background-color: #8951AD;
+          color: white;
+          border-radius: 0 4px 4px 0;
+          width: 48.33333vw;
+          height: 5.625vh;
+          font-size: 15px; }
+      footer .redesSociales {
+        position: absolute;
+        bottom: 8.4375vh;
+        height: 3.125vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        footer .redesSociales img {
+          height: 100%;
+          width: auto;
+          object-fit: scale-down; }
+
+
+          

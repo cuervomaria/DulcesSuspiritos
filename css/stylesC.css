@@ -1,142 +1,62 @@
 /* -------------------- VA TODO SIN SASS HASTA QUE LO PASE -------------------------- */
-
-/* -------------------- NavBar -------------------------- */
 body {
-    font-family: 'Open Sans', sans-serif;
-  }
-  .navbarC {
-    display: flex;
-    justify-content: flex-end;
-    transition: all .5s ease-in-out;
-    background-color: #F471B7;
-    height: 110px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 900;
-    font-size: 18px;
-  }
-  
-  .navbarC li {
-    list-style: none;
-    margin-top: 50px !important;
-    margin: 2%;
-  }
-  
-  .navbarC .borde:hover .desplegable{
-    display: block;
-    opacity: 1;
-    transition: .5s ease-in-out;
-  }
-  
-  .navbarC li ul {
-    margin-top: -17px;
-    margin-left: -10px;
-  }
-  
-  .navbarC ul li{
-    line-height: 25px;
-    margin-left: 0px;
-  }
-  
-  .navbarC ul li a{
-    cursor: pointer;
-  }
-  
-  .navbarC ul {
-    margin-right: 20px;
-  }
-  
-  .navbarC ul li a:hover{
-    color: black;
-  }
-  .navbarC ul li a:hover::before{
-    transform: scale(0,0);
-  }
-  
-  .navbarC .desplegable {
-    transition: .5s ease-in;
-    background-color: #F471B7;
-    margin-left: -20px;
-    margin-right: -10px;
-    opacity: 0;
-    top: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* -------------------- NavBar -------------------------- */
+
+.navbar {
+  background-color: #F471B7;
+  z-index: 899;
+}
+
+.navbar--img {
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+
+.navbar .dropdown-menu {
+  border: none;
+  padding-left: 10px;
+  background-color: #F471B7;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:active {
+  outline: none;
+}
+
+.navbar-nav {
+  padding-left: 43%;
+}
+
+.dropdown-item:hover {
+  background-color: #F471B7;
+}
+
+
+.navbar a {
+  color: black;
+}
+
+.navbar-brand {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+@media screen and (max-width: 992px) { 
+  .navbar-nav {
+      padding-left: 0%;
   }
 
-  .navbarC .redondeado:hover .desplegable {
-    display: none;
-  }
-  
-  .navbarC ul .redondeado {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  .navbarC li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-  }
-  
-  .solitaria {
-    padding-right: 5%;
-  }
-  
-  .navbarC a {
-    /*opacity: 1;*/
-    position: relative;
-  }
-  
-  .navbarC a:hover {
-    color: black;
-  }
-  
-  .navbarC a::before {
-    content: '';
-    display: block;
-    height: 3px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-  
-  .navbarC a:hover::before {
-    transform: scale(1,1);
-  }
-  
-  /* ---------------- Navbar Mobile ------------------------- */
-  
-  .bg-cami {
-      background-color: #F471B7;
-  }
-  nav li{
-      background-color: #F471B7;
-  }
-  
-  .navbar {
-      z-index: 899;
-  }
-  
-  .navbar .dropdown-menu {
-      border: none;
-      margin-top: -10px;
-      background-color: #F471B7;
-  }
-  
-  .nav--imagen {
-    margin-top: 5px;
-    width: 120px;
-    height: 120px;
-    position: fixed;
-    z-index: 999;
-  }
-  /* -------------------- Fin NavBar -------------------------- */
-  
+}
+
+/* -------------------- Fin NavBar -------------------------- */
+
   /* -------------------- Galeria -------------------------- */
   
   /*
@@ -157,7 +77,7 @@ body {
   }
   
   .galeria--espacio {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   
   .card-body {
@@ -167,7 +87,7 @@ body {
   .galeria--titulos {
     margin-left: 135px;
     text-align: start;
-    padding-top: 150px;
+    padding-top: 20px;
     color: #F471B7;
     font-size: 30px;
     line-height: 40.85px;
@@ -183,9 +103,9 @@ body {
   /* -------------------- Descripcion Galeria -------------------------- */
 
   .descripcion--container{
-    padding-top: 10%;
+    padding-top: 0%;
   }
-
+  
   .descripcion--container li{
     list-style-type: initial;
   }
@@ -202,8 +122,9 @@ body {
   }
 
   .descripcion--img {
-    width: 500px;
-    height: 500px;
+    margin-top: -7%;
+    width: 100%;
+    height: auto;
   }
 
   .descripcion--boton {
@@ -213,8 +134,9 @@ body {
     border-width: 0;
     background-color: #F471B7;
     color: white;
-    font-size: 11px;
+    font-size: 16px;
   }
+
   /* -------------------- Fin Descripcion Galeria -------------------------- */
 
   /* -------------------- Banner -------------------------- */
@@ -245,43 +167,52 @@ body {
     margin-left: 40% !important;
   }
   /* -------------------- Fin Banner -------------------------- */
-  /* -------------------- Carrousel Banner -------------------------- */
-  .carousel {
-    height: 150px;
-
+  .banner-mobile {
+    display: none;
   }
-  /* -------------------- Fin Carrousel Banner -------------------------- */
-  
   /* -------------------- Footer -------------------------- */
   
-  .acavalaimagen {
-    background-image: url(../assets/img/torta.jfif);
-  }
   
   /* -------------------- Fin Footer -------------------------- */
   
-  /* -------------------- Medias Queries NavBar -------------------------- */
-  @media (max-width: 1199px) {
+  
+
+
+  /*---------------------------------------------------------------------*/
+  @media (max-width: 1300px) {
     .banner {
       display: none;
     }
+    
+    .banner-mobile {
+      display: block;
+      margin-top: 5%;
+    }
   }
 
+  @media (max-width: 1050px) {
+    
+  }
+
+  @media (max-width: 990px) { 
+    
+}
+
+@media (max-width: 575px) { 
+  .linea {
+    margin-left: 50%;
+  }
+  .descripcion--banner--mobile {
+    margin-left: -20%;
+  }
+}
+
+@media (max-width: 440px) { 
+  .descripcion--banner--mobile {
+    margin-left: -30%;
+  }
+}
+
   @media (max-width: 767.98px) { 
-    .navbarC {
-        display: none;
-    }
   
-    .nav--imagen {
-        display: none;
-    }
-    .nav--imagen2 {
-      margin-top: 8px;
-      margin-left: 5px;
-      padding-bottom: 5px;
-      width: 70px;
-      height: 70px;
-      position: fixed;
-      z-index: 999;
-    }
   }

@@ -18,63 +18,40 @@
 </head>
 
 <body>
-    <!---------------------- Inicio Navbar --------------------------->
-    <div>
-        <a href="../index.html"><img class="nav--imagen" src="../assets/icon/logoC.png" alt=""></a> 
-       </div>
-         <div class="navbarC">
-             <!-- <a class="navbar-brand" href="#"><img src="./logo.png" alt="" width="200px" height="200px"></a> -->
-     
-             <link rel="preconnect" href="https://fonts.gstatic.com">
-             <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-             
-             <li class="borde"><a href="#">NUESTROS PRODUCTOS</a>
-                 <ul class="desplegable">
-                     <li><a href="../html/tortas.html">TORTAS</a></li>
-                     <li><a class="prueba" href="../html/desayunos.html">DESAYUNOS</a></li>
-                     <li class="redondeado"><a class="prueba" href="../html/momentodulce.html">MOMENTOS DULCES</a></li>
-                     <li class="redondeado"><a class="prueba" href="../html/especiales.html">ESPECIALES</a></li>
-                 </ul>
-             </li>
-             <li><a href="#">NOSOTROS</a></li>
-             <li class="solitaria"><a href="#">CONTACTO</a></li>
-         </div>
-     
-     <!-- Fin Navbar-->
- 
-     <!-- -----------------NavBar Mobile-------------------------- -->
-     <a href="../index.html"><img class="nav--imagen2 d-md-none fixed-top" src="../assets/icon/logoC.png" alt="" width="80px" height="75px"></a>
-     <nav class="navbar navbar-expand-lg navbar-light bg-cami d-md-none fixed-top">
-         <div class="container-fluid">
-           <a class="navbar-brand" href="#"></a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   NUESTROS PRODUCTOS
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <li><a class="dropdown-item" href="../html/tortas.html">TORTAS</a></li>
-                   <li><a class="dropdown-item" href="../html/desayunos.html">DESAYUNOS</a></li>
-                   <li><a class="dropdown-item" href="../html/momentodulce.html">MOMENTOS DULCES</a></li>
-                   <li><a class="dropdown-item" href="../html/especiales.html">ESPECIALES</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">CONTACTO</a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
- 
-       <!-- ---------------------Fin NavBar Mobile--------------------- -->
+        <!---------------------- Inicio Navbar --------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light bg-cami ">
+            <div class="container-fluid camila">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar--img" src="../assets/icon/logoC.png" alt="">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          NUESTROS PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./tortas.html">Tortas</a></li>
+                          <li><a class="dropdown-item" href="./momentodulce.html">Momento dulce</a></li>
+                          <li><a class="dropdown-item" href="./desayunos.html">Desayunos & Meriendas</a></li>
+                          <li><a class="dropdown-item" href="./especiales.html">Especiales</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    
+           <!-- ---------------------Fin NavBar--------------------- -->
            <!-- ----------------- galería --------------------- -->
 
 <h1 class="galeria--titulos">TORTAS</h1>
@@ -87,25 +64,25 @@
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
-        <img src="../assets/img/1 - Tortas/2-T -Drip cake.jpg" class="card-img-top" alt="...">
+        <a href="./drip.html"><img src="../assets/img/1 - Tortas/2-T -Drip cake.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
             <a href="./drip.html"><p class="card-text text-center">Drip Cake</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
-        <img src="../assets/img/1 - Tortas/3-T-Number Cake.jpg" class="card-img-top" alt="...">
+        <a href="./numberCake.html"><img src="../assets/img/1 - Tortas/3-T-Number Cake.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
             <a href="./numberCake.html"><p class="card-text text-center">Number Cake</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
-        <img src="../assets/img/1 - Tortas/4-T - Rogel.jpg" class="card-img-top" alt="...">
+        <a href="./rogel.html"><img src="../assets/img/1 - Tortas/4-T - Rogel.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
             <a href="./rogel.html"><p class="card-text text-center">Torta Rogel</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
-        <img src="../assets/img/1 - Tortas/5-T -Cheesecake de durazno.jpg" class="card-img-top" alt="...">
+        <a href="./cheesecake.html"><img src="../assets/img/1 - Tortas/5-T -Cheesecake de durazno.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
             <a href="./cheesecake.html"><p class="card-text text-center">Cheesecake de durazno </p></a>
         </div>
