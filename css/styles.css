@@ -22,26 +22,18 @@ h3 {
 p {
   font-size: 12px; }
 
-/* .navbar {
-  background-color: #F471B7;
-  height: 12.5vh; } */
-
 .imageWrapper {
-  margin-top: 10%;
   position: relative;
+  top: -111px;
   height: 100vh;
   width: 100vw;
-  background-color: #F471B7; }
-  .imageWrapper img {
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    object-fit: cover;
-    /*contain, cover, scale-down, fill, none*/ }
+  background-color: #8951AD;
+  background-image: url(../assets/img/Foto-portada.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom; }
 
 .nuestrosProductos {
-  padding-top: 5%;
-  /*padding-top: 5.9375vh;*/
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -151,8 +143,7 @@ p {
     margin-bottom: 3.75vh;
     height: 7.5vh;
     display: grid;
-    grid-template-areas: "icono titulo"
- "icono descripcion";
+    grid-template-areas: "icono titulo" "icono descripcion";
     grid-template-columns: 18.33vw 67.23vw;
     grid-template-rows: 32px 40px; }
     .seccionCondiciones .condicionPedido .icono {
@@ -199,7 +190,6 @@ p {
     height: auto; }
 
 .instagramFeed {
-  height: 47.5vh;
   width: 100vw;
   margin-top: 3.75vh;
   padding-left: 4.44444vw;
@@ -211,11 +201,10 @@ p {
     text-align: right;
     color: #F471B7; }
   .instagramFeed iframe {
-    height: 38.75vh !important; }
-
+    height: 66.66667vw !important; }
 
 footer {
-  height: 50vh;
+  height: 320px;
   width: 100vw;
   padding-top: 8.75vh;
   padding-bottom: 8.4375vh;
@@ -277,8 +266,7 @@ footer {
     margin-top: 1.25vh; }
   .sectionWrapper .contenido {
     display: grid;
-    grid-template-areas: "foto1 texto"
- "foto2 texto";
+    grid-template-areas: "foto1 texto" "foto2 texto";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-right: 16px;
@@ -403,13 +391,12 @@ footer {
         font-size: 16px; }
   .instagramFeed {
     margin-top: 0;
-    height: 91.22807vh;
     padding-left: 2.22222vw;
     padding-right: 2.22222vw; }
     .instagramFeed h3 {
       font-size: 20px; }
     .instagramFeed iframe {
-      height: 75vh !important; }
+      height: 66.66667vw !important; }
   footer {
     padding-top: 4.21053vh;
     padding-left: 33.54167vw;
