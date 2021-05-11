@@ -15,6 +15,11 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/stylesC.css">
+
+    <!-- JS -->
+    <script defer src="js/newsletter.js"></script>
+
+
  </head>
 
 <body>
@@ -41,10 +46,10 @@
                     </ul>
                   </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+                <a class="nav-link active" aria-current="page" href="html/sobreNosotros.html">SOBRE NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">CONTACTO</a>
+                <a class="nav-link active" href="html/contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -187,8 +192,8 @@
         <div class="tituloFooter">
             <h2>No te pierdas nuestras <br> novedades y promociones.</h2>
         </div>
-        <form action="">
-            <input class="inputNewsletter" type="email" placeholder="Ingresa tu e-mail" name="email" required>
+        <form  id="newsletter" action="">
+            <input class="inputNewsletter" id="contactEmail" type="email" placeholder="Ingresa tu e-mail" name="email" required>
             <input class="botonNewsletter" type="submit" value="Suscribirme">
         </form>
         <div class="redesSociales">
