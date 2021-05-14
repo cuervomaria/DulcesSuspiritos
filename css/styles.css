@@ -230,8 +230,10 @@ footer {
       margin: 0;
       border: 0px; }
     footer form .inputNewsletter {
+      padding-left: 3px;
       width: 176px;
-      height: 36px; }
+      height: 36px;
+      font-size: 15px; }
     footer form .botonNewsletter {
       background-color: #8951AD;
       color: white;
@@ -320,6 +322,10 @@ footer {
 
 /*--------------RESPONSIVE-----------*/
 @media only screen and (min-width: 768px) {
+  .bodyWrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
   h1 {
     font-size: 30px; }
   h2 {
@@ -327,7 +333,7 @@ footer {
   h3 {
     font-size: 16px; }
   .imageWrapper {
-    max-width: 100vw; }
+    max-width: 100%; }
     .imageWrapper img {
       max-width: 100%; }
   .linea {
@@ -357,6 +363,7 @@ footer {
   .seccionProductos:hover .tituloSeccion {
     background-color: #8951AD; }
   .personalizados {
+    width: 100%;
     padding-top: 52.7193vh; }
     .personalizados .tituloPersonalizado {
       height: 175px;
@@ -378,13 +385,14 @@ footer {
       margin-top: 4.21053vh;
       margin-bottom: 4.86842vh; }
     .seccionCondiciones .condicionesWrapper {
-      max-width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: nowrap; }
     .seccionCondiciones .condicionPedido {
-      grid-template-columns: 6.67vw 17.22vw;
+      width: 25%;
+      grid-template-columns: 28% 72%;
       grid-template-rows: 24px 40px;
       margin-bottom: 0; }
       .seccionCondiciones .condicionPedido p {
@@ -392,10 +400,12 @@ footer {
   .instagramFeed {
     margin-top: 0;
     padding-left: 2.22222vw;
-    padding-right: 2.22222vw; }
+    padding-right: 2.22222vw;
+    width: 100%; }
     .instagramFeed h3 {
       font-size: 20px; }
     .instagramFeed iframe {
+      width: 100%;
       height: 66.66667vw !important; }
   footer {
     padding-top: 4.21053vh;

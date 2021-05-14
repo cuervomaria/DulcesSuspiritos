@@ -327,8 +327,10 @@ footer{
             border:0px;
         }
         .inputNewsletter{
+            padding-left: 3px;
             width:176px; 
             height: 36px;
+            font-size: 15px;
         }
         
         .botonNewsletter{
@@ -465,6 +467,12 @@ $anchoDesktop:1440px;
 
 
 @media only screen and (min-width:768px){
+    .bodyWrapper{
+        max-width: 1440px; //
+        
+        margin-left:auto;
+        margin-right: auto;
+    }
     h1{
         font-size: 30px;
     }
@@ -476,7 +484,7 @@ $anchoDesktop:1440px;
     }
 
     .imageWrapper{
-        max-width: 100vw;
+        max-width: 100%; //
         img{
             max-width: 100%;
         }
@@ -528,6 +536,7 @@ $anchoDesktop:1440px;
     }
 
     .personalizados{
+        width: 100%; //
         padding-top: 601px/$altoDesktop*100vh;
         .tituloPersonalizado{
             height: 175px;
@@ -550,6 +559,7 @@ $anchoDesktop:1440px;
         padding-right: 16px/$anchoDesktop*100vw;
         padding-top: 56px/$altoDesktop*100vh;
         height: 274px/$altoDesktop*100vh;
+        
          
         .lineaArriba{
             margin-bottom: 47.5px/$altoDesktop*100vh;
@@ -560,16 +570,19 @@ $anchoDesktop:1440px;
             margin-bottom: 55.5px/$altoDesktop*100vh;  
         }
         .condicionesWrapper{
-            max-width: 100vw;
+            width: 100%; //
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: nowrap;
+           
         }
         .condicionPedido{
-        grid-template-columns: 6.67vw 17.22vw;
+            width: 25%;  //
+        grid-template-columns: 28% 72%; //6.67vw 17.22vw
         grid-template-rows: 24px 40px;
         margin-bottom: 0;
+        // border: solid black;
         p{
             font-size: 16px;
         }
@@ -579,14 +592,16 @@ $anchoDesktop:1440px;
         margin-top: 0;
         // height: 1040px/$altoDesktop*100vh;
         padding-left: 32px/$anchoDesktop*100vw;
-        padding-right: 32px/$anchoDesktop*100vw;
+        padding-right: 32px/$anchoDesktop*100vw; 
         // background-color: $color-principal;
+        width: 100%; //
        
         h3{
             font-size: 20px;
         }
         iframe{
             //  height: 905px/$altoDesktop*100vh !important;
+            width: 100%; //
             height: 2/3*100vw !important;
             // background-color: $color-linea;
             
