@@ -28,17 +28,6 @@ nav {
   background-color: #F471B7;
 }
 
-/* .navbar-toggler {
-  border: none;
-}
-.navbar-toggler:active {
-  outline: none !important;
-}
-
-.navbar-toggler  .navbar-toggler-icon {
-  color: #fff;
-} */
-
 .navbar button.navbar-toggler {
   border: none;
   color: rgba(0, 0, 0, 0);
