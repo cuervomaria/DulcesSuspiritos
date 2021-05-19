@@ -9,6 +9,11 @@ body {
   z-index: 899;
 }
 
+.navbar button.navbar-toggler {
+  border: none;
+  color: rgba(0, 0, 0, 0);
+}
+
 .navbar--img {
   width: 120px;
   height: 120px;
