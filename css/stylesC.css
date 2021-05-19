@@ -46,14 +46,10 @@ nav {
   background-color: #F471B7;
 }
 
-
 .navbar ul li a {
   color: #fff !important;
 }
 
-.navbar a {
-  color: white;
-}
 
 .navbar-brand {
   margin: 0px;
