@@ -3,6 +3,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 /* -------------------- NavBar -------------------------- */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
 
 .navbar {
   background-color: #F471B7;
@@ -23,11 +28,20 @@ body {
   background-color: #F471B7;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
   border: none;
 }
 .navbar-toggler:active {
-  outline: none;
+  outline: none !important;
+}
+
+.navbar-toggler  .navbar-toggler-icon {
+  color: #fff;
+} */
+
+.navbar button.navbar-toggler {
+  border: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .navbar-nav {
@@ -38,9 +52,8 @@ body {
   background-color: #F471B7;
 }
 
-
-.navbar a {
-  color: black;
+.navbar ul li a {
+  color: #fff !important;
 }
 
 .navbar-brand {
