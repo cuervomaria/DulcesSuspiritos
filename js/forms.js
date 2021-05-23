@@ -5,12 +5,7 @@ const enviarFormulario = (e) => {
 
   e.preventDefault()
 
-  // const name = "nombre"
-  // const phone = "2610000"
-  // const email = "nombre@gmail.com"
-  // const message = "Este es el mensaje"
-  // const subscribe = "True"
-
+  const form = document.getElementById("contactForm")
   const name = document.getElementById("name").value
   const phone = document.getElementById("phone").value
   const email = document.getElementById("email").value
@@ -36,6 +31,10 @@ const enviarFormulario = (e) => {
   }).then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response));
+    alert("Muchas gracias!")
+    form.reset()
+
+
 }
 
 contactForm.addEventListener("submit", enviarFormulario)
