@@ -24,7 +24,6 @@ p {
 
 .imageWrapper {
   position: relative;
-  top: -111px;
   height: 100vh;
   width: 100vw;
   background-color: #8951AD;
@@ -34,6 +33,7 @@ p {
   background-position-y: bottom; }
 
 .nuestrosProductos {
+  padding-top: 5.9375vh;
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -47,6 +47,9 @@ p {
   margin: auto;
   margin-top: 3.75vh;
   margin-bottom: 3.75vh; }
+
+.productosContenedor a {
+  text-decoration: none; }
 
 .productosContenedor .seccionProductos {
   position: relative;
@@ -182,7 +185,7 @@ p {
   position: fixed;
   left: 4.44444vw;
   bottom: 2.5vh;
-  z-index: 1; }
+  z-index: 100; }
   .iconosFlotantes a {
     text-decoration: none; }
   .iconosFlotantes img {
@@ -295,8 +298,11 @@ footer {
     text-align: justify; }
 
 /*------------------FORMULARIO----------------*/
+.sectionWrapper {
+  margin-top: 32px; }
+
 .formWrapper {
-  margin: 0 4.44444vw; }
+  padding: 0 4.44444vw; }
   .formWrapper .inputForm {
     outline: 0;
     border: none;
@@ -344,10 +350,12 @@ footer {
     .nuestrosProductos .productosContenedor {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      flex-wrap: nowrap; }
       .nuestrosProductos .productosContenedor .seccionProductos {
         height: 44.21053vh;
         width: 23.61111vw;
+        max-width: 340px;
         margin-right: 1.11111vw;
         padding-top: 2.80702vh; }
         .nuestrosProductos .productosContenedor .seccionProductos .boton {
@@ -406,7 +414,8 @@ footer {
       font-size: 20px; }
     .instagramFeed iframe {
       width: 100%;
-      height: 66.66667vw !important; }
+      height: 66.66667vw !important;
+      background-color: #FEBF55; }
   footer {
     padding-top: 4.21053vh;
     padding-left: 33.54167vw;
@@ -458,7 +467,6 @@ footer {
     margin-top: 134px; }
   /*---------------FORMULARIO CONTACTO-----------*/
   .formWrapper {
-    margin: 0;
-    padding: 0 25.76389vw; }
+    margin: 0 25.76389vw; }
     .formWrapper .botonFormulario {
       padding: 0; } }

@@ -14,11 +14,13 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/stylesC.css">
+    <!-- JS -->
+    <script defer src="../js/newsletter.js"></script>
 </head>
 
 <body>
         <!---------------------- Inicio Navbar --------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-cami ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-cami ">
             <div class="container-fluid camila">
                 <a class="navbar-brand" href="../index.html">
                     <img class="navbar--img" src="../assets/icon/logoC.png" alt="">
@@ -40,10 +42,10 @@
                         </ul>
                       </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+                    <a class="nav-link active" aria-current="page" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">CONTACTO</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">CONTACTO</a>
                   </li>
                 </ul>
               </div>
@@ -55,7 +57,7 @@
        <!-- ---------------------Descripcion--------------------- -->
     <div class="container descripcion--container">
         <div class="row">  
-          <div class="col-lg-6"><img class="descripcion--img" src="../assets/img/4 - Festividades/1-F - HuevosColores-1.jpg" alt=""></div>
+          <div class="col-lg-6"><img class="descripcion--img--xl" src="../assets/img/4 - Festividades/1-F - HuevosColores-1.jpg" alt=""></div>
           <div class="col-lg-6"><br><h1>Huevo de pascua "colores"</h1> <br>
             <a href="https://wa.me/5491127605751?text=Hola,%20te%20contacto%20desde%20la%20web%20de%20Dulces%20Suspiritos%20Bakery." target="_blank"><button class="descripcion--boton">Pedir cotización</button></a> <br>
             <br>
@@ -84,7 +86,7 @@
 
 <!-- ---------------------Banner--------------------- -->
 
-        <div class="container-fluid banner">
+        <div class="container-fluid banner2">
             <div class="linea lineaArriba"></div>
             <div class="row">
                 <div class="col-md-1">
@@ -156,22 +158,26 @@
     </div>
 <!-- ---------------------Fin Banner mobile--------------------- -->
         
-<!-- -----------------Footer------------ -->
-<footer>
+ <!-- -----------------Footer------------ -->
+ <footer>
     <div class="tituloFooter">
-        <h2>No te pierdas nuestras novedades y promociones.</h2>
+        <h2>No te pierdas nuestras <br> novedades y promociones.</h2>
     </div>
-    <form action="">
-        <input class="inputNewsletter" type="email" placeholder="Ingresa tu e-mail" name="email" required>
+    <form id="newsletter" action="">
+        <input class="inputNewsletter" id="contactEmail" type="email" placeholder="Ingresa tu e-mail" name="email"
+            required>
         <input class="botonNewsletter" type="submit" value="Suscribirme">
     </form>
     <div class="redesSociales">
-        <a href="https://wa.me/5491127605751?text=Hola,%20te%20contacto%20desde%20la%20web%20de%20Dulces%20Suspiritos%20Bakery." target="_blank">
+        <a href="https://wa.me/5491127605751?text=Hola,%20te%20contacto%20desde%20la%20web%20de%20Dulces%20Suspiritos%20Bakery."
+            target="_blank">
             <img src="../assets/icon/Sin caja/Atomic=Atom, Tipo=Icon, Estado=Standard, Caracteristica=WhatsApp-White.svg"
                 alt="iconoWhatsapp">
         </a>
-        <a href="https://www.instagram.com/dulces.suspiritos/" target="_blank"><img src="../assets/icon/Sin caja/Group.svg" alt="iconoInstagram"></a>
-        <a href="https://m.facebook.com/dulcessuspiritos-105522761333626/?tsid=0.9719007443292997&source=result" target="_blank"><img src="../assets/icon/Sin caja/f_logo_RGB-White_100 1.svg" alt="iconoFacebook"></a>
+        <a href="https://www.instagram.com/dulces.suspiritos/" target="_blank"><img
+                src="../assets/icon/Sin caja/Group.svg" alt="iconoInstagram"></a>
+        <a href="https://m.facebook.com/dulcessuspiritos-105522761333626/?tsid=0.9719007443292997&source=result"
+            target="_blank"><img src="../assets/icon/Sin caja/f_logo_RGB-White_100 1.svg" alt="iconoFacebook"></a>
     </div>
 
 </footer>

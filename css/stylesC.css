@@ -3,10 +3,20 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 /* -------------------- NavBar -------------------------- */
+nav {
+  width: 100%;
+  position: fixed !important;
+  top: 0;
+}
 
 .navbar {
   background-color: #F471B7;
   z-index: 899;
+}
+
+.navbar button.navbar-toggler {
+  border: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .navbar--img {
@@ -23,11 +33,9 @@ body {
   background-color: #F471B7;
 }
 
-.navbar-toggler {
+.navbar button.navbar-toggler {
   border: none;
-}
-.navbar-toggler:active {
-  outline: none;
+  color: rgba(0, 0, 0, 0);
 }
 
 .navbar-nav {
@@ -38,10 +46,10 @@ body {
   background-color: #F471B7;
 }
 
-
-.navbar a {
-  color: black;
+.navbar ul li a {
+  color: #fff !important;
 }
+
 
 .navbar-brand {
   margin: 0px;
@@ -88,7 +96,7 @@ body {
   .galeria--titulos {
     margin-left: 135px;
     text-align: start;
-    padding-top: 20px;
+    margin-top: 150px;
     color: #F471B7;
     font-size: 30px;
     line-height: 40.85px;
@@ -96,7 +104,11 @@ body {
 
   .galeria--espacio a{
     text-decoration: none;
-    color: black;
+    color: white;
+  }
+
+  .card-text {
+    font-size: 16px;
   }
 
   .galeria-ultima {
@@ -108,7 +120,7 @@ body {
   /* -------------------- Descripcion Galeria -------------------------- */
 
   .descripcion--container{
-    padding-top: 0%;
+    margin-top: 110px;
   }
 
   .descripcion--container .descripcion-linea {
@@ -133,9 +145,37 @@ body {
   }
 
   .descripcion--img {
-    margin-top: -7%;
+    margin-top: 2%;
     width: 100%;
-    height: auto;
+    height: 70%;
+  }
+
+  .descripcion--img--xl {
+    margin-top: 2%;
+    width: 100%;
+    height: 58%;
+  }
+  .descripcion--img--md {
+    margin-top: 2%;
+    width: 100%;
+    height: 65%;
+  }
+
+  .descripcion--img--sm {
+    margin-top: 5%;
+    width: 100%;
+    height: 95%;
+  }
+  .descripcion--img--otra {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .agrandar {
+    margin-top: 2%;
+    width: 100%;
+    height: 82%;
   }
 
   .descripcion--boton {
@@ -207,7 +247,146 @@ body {
     width: 60%;
     margin-bottom: 4%;
   }
+
   /* -------------------- Fin Banner -------------------------- */
+  /* -------------------- Banner2 -------------------------- */
+  
+  .banner2 {
+    width: 100%;
+    margin-top: -22%;
+    margin-bottom: 3%;
+  }
+  
+    .banner2 .carro {
+      width: 3.7vw;
+      height: 7.3vh;
+      margin-left: 40% !important;
+    }
+    .banner2 .billetera {
+      width: 3.5vw;
+      height: 7.5vh;
+      margin-left: 40% !important;
+    }
+    .banner2 .manos {
+      width: 4vw;
+      height: 6vh;
+      margin-left: 40% !important;
+    }
+    .banner2 .truckk {
+      width: 4vw;
+      height: 6vh;
+      margin-left: 40% !important;
+    }
+
+    .banner2 .lineaArriba {
+      width: 60%;
+      margin-bottom: 4%;
+    }
+  
+  /* -------------------- Fin Banner2 -------------------------- */
+
+    /* -------------------- Banner3 -------------------------- */
+.banner3{
+  width: 100%;
+  margin-top: -4.5%;
+  margin-bottom: 3%;
+}
+
+  .banner3 .carro {
+    width: 3.7vw;
+    height: 7.3vh;
+    margin-left: 40% !important;
+  }
+  .banner3 .billetera {
+    width: 3.5vw;
+    height: 7.5vh;
+    margin-left: 40% !important;
+  }
+  .banner3 .manos {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+  .banner3 .truckk {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+
+  .banner3 .lineaArriba {
+    width: 60%;
+    margin-bottom: 4%;
+  }
+
+  /* -------------------- Fin Banner3 -------------------------- */
+    /* -------------------- Banner4 -------------------------- */
+.banner4{
+  width: 100%;
+  margin-top: -12.5%;
+  margin-bottom: 3%;
+}
+
+  .banner4 .carro {
+    width: 3.7vw;
+    height: 7.3vh;
+    margin-left: 40% !important;
+  }
+  .banner4 .billetera {
+    width: 3.5vw;
+    height: 7.5vh;
+    margin-left: 40% !important;
+  }
+  .banner4 .manos {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+  .banner4 .truckk {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+
+  .banner4 .lineaArriba {
+    width: 60%;
+    margin-bottom: 4%;
+  }
+
+  /* -------------------- Fin Banner4 -------------------------- */
+    /* -------------------- Banner5 -------------------------- */
+.banner5{
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 3%;
+}
+
+  .banner5 .carro {
+    width: 3.7vw;
+    height: 7.3vh;
+    margin-left: 40% !important;
+  }
+  .banner5 .billetera {
+    width: 3.5vw;
+    height: 7.5vh;
+    margin-left: 40% !important;
+  }
+  .banner5 .manos {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+  .banner5 .truckk {
+    width: 4vw;
+    height: 6vh;
+    margin-left: 40% !important;
+  }
+
+  .banner5 .lineaArriba {
+    width: 60%;
+    margin-bottom: 4%;
+  }
+
+  /* -------------------- Fin Banner5 -------------------------- */
 
   /* -------------------- Banner Mobile-------------------------- */
   .banner-container-grid {
@@ -246,12 +425,50 @@ body {
 
   @media (max-width: 1050px) {
     .banner {
-      display: none;
+      display: none !important;
     } 
+    
+    .banner2 {
+      display: none !important;
+    } 
+    .banner3 {
+      display: none !important;
+    } 
+    .banner4 {
+      display: none !important;
+    } 
+    .banner5 {
+      display: none !important;
+    } 
+    
 
     .banner-container-grid {
       display: block !important;
       width: 80%;
+    }
+
+    .descripcion--img--xl {
+      margin-top: 2%;
+      width: 100%;
+      height: 90%;
+    }
+
+    .descripcion--img--sm {
+      margin-top: 2%;
+      height: 90%;
+    }
+
+    .descripcion--img--md {
+      margin-top: 2%;
+      height: 90%;
+    }
+    .descripcion--img--otra {
+      margin-top: 2%;
+      height: 90%;
+    }
+
+    .agrandar {
+      height: 100%;
     }
   }
 

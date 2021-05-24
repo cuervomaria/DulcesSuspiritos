@@ -40,7 +40,7 @@ p{
     // position: absolute;
     // top:0;
     position: relative;
-    top: -111px;
+    //top: -111px;
     height: 100vh;
     width: 100vw;
     background-color: $color-secundario;
@@ -62,7 +62,7 @@ p{
 
 
 .nuestrosProductos {
-    // padding-top: 38px/$alto*100vh ;
+    padding-top: 38px/$alto*100vh ;
     padding-left: 4.5vh;
     padding-right: 4.5vh;
     h1{
@@ -82,6 +82,10 @@ p{
 
 
 .productosContenedor {
+    
+    a{
+        text-decoration: none;
+    }
      .seccionProductos {
         position: relative;
         // border: solid black;
@@ -265,7 +269,7 @@ p{
     position: fixed;
     left: 16px/$ancho*100vw;
     bottom: 16px/$alto*100vh;
-    z-index: 1;
+    z-index: 100;
 
     a{
         text-decoration: none;
@@ -428,9 +432,11 @@ footer{
 }
 
 /*------------------FORMULARIO----------------*/
-
+.sectionWrapper{
+    margin-top: 32px;
+}
 .formWrapper {
-    margin: 0 16px/$ancho*100vw;
+    padding: 0 16px/$ancho*100vw;
  
     .inputForm{
         outline: 0;
@@ -496,6 +502,7 @@ $anchoDesktop:1440px;
 
     .nuestrosProductos{
         // padding-top: 31px/$altoDesktop*100vh;
+        
         padding-left: 16px/$anchoDesktop*100vw;
         padding-right: 16px/$anchoDesktop*100vw;
 
@@ -504,10 +511,12 @@ $anchoDesktop:1440px;
             flex-direction: row;
             // justify-content: space-between;
             justify-content: space-evenly;
+            flex-wrap:nowrap;
 
             .seccionProductos{
                 height:504px/$altoDesktop*100vh;
                 width:340px/$anchoDesktop*100vw;
+                max-width: 340px;
                 margin-right: 16px/$anchoDesktop*100vw;
                 padding-top: 32px/$altoDesktop*100vh;
                 
@@ -603,7 +612,7 @@ $anchoDesktop:1440px;
             //  height: 905px/$altoDesktop*100vh !important;
             width: 100%; //
             height: 2/3*100vw !important;
-            // background-color: $color-linea;
+             background-color: $color-linea;
             
         } 
     }
@@ -680,8 +689,11 @@ $anchoDesktop:1440px;
     /*---------------FORMULARIO CONTACTO-----------*/
 
     .formWrapper{
-        margin:0;
-        padding: 0 371px/$anchoDesktop*100vw;
+        // margin:0;
+        margin: 0 371px/$anchoDesktop*100vw;
+        // margin-left: 371px;
+        // margin-right: 371px;
+        // padding: 0 20vw;
         .botonFormulario{
             padding:0;
         }

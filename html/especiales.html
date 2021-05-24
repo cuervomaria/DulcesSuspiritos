@@ -15,11 +15,13 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/stylesC.css">
+    <!-- JS -->
+    <script defer src="../js/newsletter.js"></script>
 </head>
 
 <body>
         <!---------------------- Inicio Navbar --------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-cami ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-cami ">
             <div class="container-fluid camila">
                 <a class="navbar-brand" href="../index.html">
                     <img class="navbar--img" src="../assets/icon/logoC.png" alt="">
@@ -41,10 +43,10 @@
                         </ul>
                       </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+                    <a class="nav-link active" aria-current="page" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">CONTACTO</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contacto.html">CONTACTO</a>
                   </li>
                 </ul>
               </div>
@@ -61,58 +63,62 @@
     <div class="card mb-4" style="width: 21.4rem;"> <!-- style="width: 21.4rem;" -->
         <a href="../html/huevoColores.html"><img src="../assets/img/4 - Festividades/1-F - HuevosColores-2.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
-       <a href="../html/huevoColores.html"><p class="card-text text-center">Huevo de pascua "colores"</p></a> 
+       <a href="../html/huevoColores.html"><p class="card-text text-start">Huevo de pascua "colores"</p></a> 
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
         <a href="./huevoRocklets.html"><img src="../assets/img/4 - Festividades/2-F - Huevos Rocklets.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
-            <a href="./huevoRocklets.html"><p class="card-text text-center">Huevo de pascua "rocklets"</p></a>
+            <a href="./huevoRocklets.html"><p class="card-text text-start">Huevo de pascua "rocklets"</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
         <a href="./huevoMinnie.html"><img src="../assets/img/4 - Festividades/3-F - Huevos MM.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
-            <a href="./huevoMinnie.html"><p class="card-text text-center">Huevo de pascua "minnie y mickey mouse"</p></a>
+            <a href="./huevoMinnie.html"><p class="card-text text-start">Huevo de pascua "minnie y mickey mouse"</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
         <a href="./panDulce.html"><img src="../assets/img/4 - Festividades/4-F-Pan Dulce-1.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
-            <a href="./panDulce.html"><p class="card-text text-center">Pan dulce</p></a>
+            <a href="./panDulce.html"><p class="card-text text-start">Pan dulce</p></a>
         </div>
     </div>
     <div class="card mb-4" style="width: 21.4rem;">
         <a href="./gNavidenas.html"><img src="../assets/img/4 - Festividades/5-F-Galletas navideñas.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
-            <a href="./gNavidenas.html"><p class="card-text text-center">Galletitas navideñas</p></a>
+            <a href="./gNavidenas.html"><p class="card-text text-start">Galletitas navideñas</p></a>
         </div>
     </div>
     <div class="card mb-4 galeria-ultima" style="width: 21.4rem;">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
-            <p class="card-text text-center"></p>
+            <p class="card-text text-start"></p>
         </div>
     </div>
 </div>
 <!-- ------------- Fin galería --------------- -->
 
-<!-- -----------------Footer------------ -->
-<footer>
+ <!-- -----------------Footer------------ -->
+ <footer>
     <div class="tituloFooter">
-        <h2>No te pierdas nuestras novedades y promociones.</h2>
+        <h2>No te pierdas nuestras <br> novedades y promociones.</h2>
     </div>
-    <form action="">
-        <input class="inputNewsletter" type="email" placeholder="Ingresa tu e-mail" name="email" required>
+    <form id="newsletter" action="">
+        <input class="inputNewsletter" id="contactEmail" type="email" placeholder="Ingresa tu e-mail" name="email"
+            required>
         <input class="botonNewsletter" type="submit" value="Suscribirme">
     </form>
     <div class="redesSociales">
-        <a href="https://wa.me/5491127605751?text=Hola,%20te%20contacto%20desde%20la%20web%20de%20Dulces%20Suspiritos%20Bakery." target="_blank">
+        <a href="https://wa.me/5491127605751?text=Hola,%20te%20contacto%20desde%20la%20web%20de%20Dulces%20Suspiritos%20Bakery."
+            target="_blank">
             <img src="../assets/icon/Sin caja/Atomic=Atom, Tipo=Icon, Estado=Standard, Caracteristica=WhatsApp-White.svg"
                 alt="iconoWhatsapp">
         </a>
-        <a href="https://www.instagram.com/dulces.suspiritos/" target="_blank"><img src="../assets/icon/Sin caja/Group.svg" alt="iconoInstagram"></a>
-        <a href="https://m.facebook.com/dulcessuspiritos-105522761333626/?tsid=0.9719007443292997&source=result" target="_blank"><img src="../assets/icon/Sin caja/f_logo_RGB-White_100 1.svg" alt="iconoFacebook"></a>
+        <a href="https://www.instagram.com/dulces.suspiritos/" target="_blank"><img
+                src="../assets/icon/Sin caja/Group.svg" alt="iconoInstagram"></a>
+        <a href="https://m.facebook.com/dulcessuspiritos-105522761333626/?tsid=0.9719007443292997&source=result"
+            target="_blank"><img src="../assets/icon/Sin caja/f_logo_RGB-White_100 1.svg" alt="iconoFacebook"></a>
     </div>
 
 </footer>
