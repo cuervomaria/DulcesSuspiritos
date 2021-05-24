@@ -22,26 +22,18 @@ h3 {
 p {
   font-size: 12px; }
 
-/* .navbar {
-  background-color: #F471B7;
-  height: 12.5vh; } */
-
 .imageWrapper {
-  margin-top: 10%;
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #F471B7; }
-  .imageWrapper img {
-    width: 100vw;
-    position: absolute;
-    bottom: 0;
-    object-fit: cover;
-    /*contain, cover, scale-down, fill, none*/ }
+  background-color: #8951AD;
+  background-image: url(../assets/img/Foto-portada.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom; }
 
 .nuestrosProductos {
-  padding-top: 5%;
-  /*padding-top: 5.9375vh;*/
+  padding-top: 5.9375vh;
   padding-left: 4.5vh;
   padding-right: 4.5vh; }
   .nuestrosProductos h1 {
@@ -55,6 +47,9 @@ p {
   margin: auto;
   margin-top: 3.75vh;
   margin-bottom: 3.75vh; }
+
+.productosContenedor a {
+  text-decoration: none; }
 
 .productosContenedor .seccionProductos {
   position: relative;
@@ -151,8 +146,7 @@ p {
     margin-bottom: 3.75vh;
     height: 7.5vh;
     display: grid;
-    grid-template-areas: "icono titulo"
- "icono descripcion";
+    grid-template-areas: "icono titulo" "icono descripcion";
     grid-template-columns: 18.33vw 67.23vw;
     grid-template-rows: 32px 40px; }
     .seccionCondiciones .condicionPedido .icono {
@@ -191,7 +185,7 @@ p {
   position: fixed;
   left: 4.44444vw;
   bottom: 2.5vh;
-  z-index: 1; }
+  z-index: 100; }
   .iconosFlotantes a {
     text-decoration: none; }
   .iconosFlotantes img {
@@ -199,7 +193,6 @@ p {
     height: auto; }
 
 .instagramFeed {
-  height: 47.5vh;
   width: 100vw;
   margin-top: 3.75vh;
   padding-left: 4.44444vw;
@@ -211,11 +204,10 @@ p {
     text-align: right;
     color: #F471B7; }
   .instagramFeed iframe {
-    height: 38.75vh !important; }
-
+    height: 66.66667vw !important; }
 
 footer {
-  height: 50vh;
+  height: 320px;
   width: 100vw;
   padding-top: 8.75vh;
   padding-bottom: 8.4375vh;
@@ -241,8 +233,10 @@ footer {
       margin: 0;
       border: 0px; }
     footer form .inputNewsletter {
+      padding-left: 3px;
       width: 176px;
-      height: 36px; }
+      height: 36px;
+      font-size: 15px; }
     footer form .botonNewsletter {
       background-color: #8951AD;
       color: white;
@@ -277,8 +271,7 @@ footer {
     margin-top: 1.25vh; }
   .sectionWrapper .contenido {
     display: grid;
-    grid-template-areas: "foto1 texto"
- "foto2 texto";
+    grid-template-areas: "foto1 texto" "foto2 texto";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-right: 16px;
@@ -305,8 +298,11 @@ footer {
     text-align: justify; }
 
 /*------------------FORMULARIO----------------*/
+.sectionWrapper {
+  margin-top: 32px; }
+
 .formWrapper {
-  margin: 0 4.44444vw; }
+  padding: 0 4.44444vw; }
   .formWrapper .inputForm {
     outline: 0;
     border: none;
@@ -332,6 +328,10 @@ footer {
 
 /*--------------RESPONSIVE-----------*/
 @media only screen and (min-width: 768px) {
+  .bodyWrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
   h1 {
     font-size: 30px; }
   h2 {
@@ -339,7 +339,7 @@ footer {
   h3 {
     font-size: 16px; }
   .imageWrapper {
-    max-width: 100vw; }
+    max-width: 100%; }
     .imageWrapper img {
       max-width: 100%; }
   .linea {
@@ -350,10 +350,12 @@ footer {
     .nuestrosProductos .productosContenedor {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      flex-wrap: nowrap; }
       .nuestrosProductos .productosContenedor .seccionProductos {
         height: 44.21053vh;
         width: 23.61111vw;
+        max-width: 340px;
         margin-right: 1.11111vw;
         padding-top: 2.80702vh; }
         .nuestrosProductos .productosContenedor .seccionProductos .boton {
@@ -369,6 +371,7 @@ footer {
   .seccionProductos:hover .tituloSeccion {
     background-color: #8951AD; }
   .personalizados {
+    width: 100%;
     padding-top: 52.7193vh; }
     .personalizados .tituloPersonalizado {
       height: 175px;
@@ -390,26 +393,29 @@ footer {
       margin-top: 4.21053vh;
       margin-bottom: 4.86842vh; }
     .seccionCondiciones .condicionesWrapper {
-      max-width: 100vw;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: nowrap; }
     .seccionCondiciones .condicionPedido {
-      grid-template-columns: 6.67vw 17.22vw;
+      width: 25%;
+      grid-template-columns: 28% 72%;
       grid-template-rows: 24px 40px;
       margin-bottom: 0; }
       .seccionCondiciones .condicionPedido p {
         font-size: 16px; }
   .instagramFeed {
     margin-top: 0;
-    height: 91.22807vh;
     padding-left: 2.22222vw;
-    padding-right: 2.22222vw; }
+    padding-right: 2.22222vw;
+    width: 100%; }
     .instagramFeed h3 {
       font-size: 20px; }
     .instagramFeed iframe {
-      height: 75vh !important; }
+      width: 100%;
+      height: 66.66667vw !important;
+      background-color: #FEBF55; }
   footer {
     padding-top: 4.21053vh;
     padding-left: 33.54167vw;
@@ -461,7 +467,6 @@ footer {
     margin-top: 134px; }
   /*---------------FORMULARIO CONTACTO-----------*/
   .formWrapper {
-    margin: 0;
-    padding: 0 25.76389vw; }
+    margin: 0 25.76389vw; }
     .formWrapper .botonFormulario {
       padding: 0; } }
