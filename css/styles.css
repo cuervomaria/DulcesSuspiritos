@@ -108,18 +108,16 @@ p {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: teal;
   text-align: center;
-  padding-top: 60.625vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(../assets/img/Seccion-pedidos-personalizados.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
   .personalizados h2 {
-    margin-left: 14.72vw;
-    margin-right: 14.72vw;
+    text-align: center;
     color: #8951AD; }
   .personalizados button {
     position: absolute;
@@ -269,33 +267,33 @@ footer {
     color: #F471B7; }
   .sectionWrapper .linea {
     margin-top: 1.25vh; }
-  .sectionWrapper .contenido {
-    display: grid;
-    grid-template-areas: "foto1 texto" "foto2 texto";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .sectionWrapper #contenidoMobile {
     padding-right: 16px;
     padding-left: 16px; }
-  .sectionWrapper .foto1 {
-    grid-area: foto1;
-    margin-bottom: 2.5vh;
-    width: 42.22222vw;
-    border: solid black;
-    height: 29.53125vh;
-    background-color: blue; }
-    .sectionWrapper .foto1 img {
-      object-fit: scale-down; }
-  .sectionWrapper .foto2 {
-    grid-area: foto2;
-    width: 42.22222vw;
-    border: solid black;
-    height: 29.53125vh;
-    background-color: blue; }
-    .sectionWrapper .foto2 img {
-      object-fit: scale-down; }
-  .sectionWrapper .texto {
-    grid-area: texto;
-    text-align: justify; }
+    .sectionWrapper #contenidoMobile .foto1 {
+      float: left;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      width: 42.22222vw;
+      height: 29.53125vh;
+      background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-1.jpg);
+      background-size: cover; }
+    .sectionWrapper #contenidoMobile .foto2 {
+      float: right;
+      margin-left: 16px;
+      margin-bottom: 16px;
+      width: 42.22222vw;
+      height: 29.53125vh;
+      background-color: blue;
+      background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-2.jpg);
+      background-size: cover; }
+    .sectionWrapper #contenidoMobile .texto1 p {
+      text-align: justify; }
+    .sectionWrapper #contenidoMobile .texto2 p {
+      text-align: justify; }
+
+#contenidoDesktop {
+  display: none; }
 
 /*------------------FORMULARIO----------------*/
 .sectionWrapper {
@@ -358,6 +356,8 @@ footer {
         max-width: 340px;
         margin-right: 1.11111vw;
         padding-top: 2.80702vh; }
+        .nuestrosProductos .productosContenedor .seccionProductos h2 {
+          font-size: 16px; }
         .nuestrosProductos .productosContenedor .seccionProductos .boton {
           background-color: #C9A2E2;
           position: absolute;
@@ -371,11 +371,8 @@ footer {
   .seccionProductos:hover .tituloSeccion {
     background-color: #8951AD; }
   .personalizados {
-    width: 100%;
-    padding-top: 52.7193vh; }
+    width: 100%; }
     .personalizados .tituloPersonalizado {
-      height: 175px;
-      width: 693px;
       text-align: center;
       margin: auto; }
       .personalizados .tituloPersonalizado h2 {
@@ -428,41 +425,59 @@ footer {
       footer .tituloFooter .redesSociales {
         height: 25px; }
   /*---------------SOBRE NOSOTROS---------*/
+  #contenidoDesktop {
+    display: block; }
+  #contenidoMobile {
+    display: none; }
   .sectionWrapper {
-    height: 60vh; }
-    .sectionWrapper .contenido {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+    .sectionWrapper #contenidoDesktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       display: grid;
       grid-template-areas: "foto1 texto foto2" !important;
       grid-template-columns: 25% 50% 25% !important;
-      grid-template-rows: 39.91228vh !important;
-      border: solid black; }
-      .sectionWrapper .contenido .foto1 {
+      grid-template-rows: auto;
+      margin-bottom: 2px; }
+      .sectionWrapper #contenidoDesktop .foto1 {
         grid-area: foto1;
         width: 23.81944vw;
+        max-width: 343px;
         height: 36.49123vh;
-        background-color: red;
-        margin-bottom: 0;
+        margin-right: 16px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center; }
-      .sectionWrapper .contenido .foto2 {
+        justify-content: center;
+        background-image: url("../assets/img/SobreNosotros/Sobre-nosotros-1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center; }
+      .sectionWrapper #contenidoDesktop .foto2 {
         grid-area: foto2;
         width: 23.81944vw;
+        max-width: 343px;
         height: 36.49123vh;
-        background-color: red;
+        margin-left: 16px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center; }
-      .sectionWrapper .contenido .texto {
+        justify-content: center;
+        background-image: url("../assets/img/SobreNosotros/Sobre-nosotros-2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center; }
+      .sectionWrapper #contenidoDesktop .texto {
         grid-area: texto;
         text-align: justify;
-        height: 36.49123vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center; }
+        .sectionWrapper #contenidoDesktop .texto p {
+          font-size: 16px; }
   .footerRow {
     margin-top: 134px; }
   /*---------------FORMULARIO CONTACTO-----------*/
