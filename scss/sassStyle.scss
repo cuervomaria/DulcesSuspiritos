@@ -151,19 +151,17 @@ p{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: teal;
     text-align: center;
-    padding-top: 388px/$alto*100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     background-image: url(../assets/img/Seccion-pedidos-personalizados.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     h2 {
-        margin-left: 14.72vw;
-        margin-right: 14.72vw;
+        text-align: center;
         color: $color-secundario;
       
     }
@@ -366,11 +364,6 @@ footer{
 
 /*SOBRE NOSOTROS - FORMULARIO*/
 
-// .bodyNosotros {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-// }
 
 .sectionMargin{
     margin-bottom: 1px;
@@ -388,47 +381,101 @@ footer{
         margin-top: 8px/$alto*100vh;
     }
 
-    .contenido {
-        
-        display: grid;
-        grid-template-areas: 
-                "foto1 texto"
-                "foto2 texto";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding-right: 16px;
-    padding-left: 16px;
-        
-    }
+    // .contenido {
+    //     display: grid;
+    //     grid-template-areas: 
+    //             "foto1 texto"
+    //             "foto2 texto";
+    //     grid-template-columns: auto auto;
+    //     grid-template-rows: 3fr 4fr;
+    //     padding-right: 16px;
+    //     padding-left: 16px;
+    // }
 
-    .foto1{
-        grid-area: foto1;
-        margin-bottom: 16px/$alto*100vh;
-        width:152px/$ancho*100vw;
-        border: solid black;
-        height: 189px/$alto*100vh ;
-        background-color: blue;
-        
-        img{
-            object-fit: scale-down;
-        }
-    }
+    // .foto1{
+    //     grid-area: foto1;
+    //     margin-bottom: 16px/$alto*100vh;
+    //     width:152px/$ancho*100vw;
+    //     // border: solid black;
+    //     height: 189px/$alto*100vh ;
+    //     // background-color: blue;
+    //     background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-1.jpg);
+    //     background-size: cover;
+    //     // display: flex;
+    //     // align-items: center;
+    //     // justify-content: center;
+                
+    // }
     
-    .foto2{
-        grid-area: foto2;
-        width:152px/$ancho*100vw;
-        border: solid black;
-        height: 189px/$alto*100vh ;
-        background-color: blue;
+    // .foto2{
+    //     grid-area: foto2;
+    //     width:152px/$ancho*100vw;
+    //     // border: solid black;
+    //     height: 189px/$alto*100vh ;
+    //     background-color: blue;
+    //     background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-2.jpg);
+    //     background-size: cover;
         
-        img{
-            object-fit: scale-down;
+    // }
+    // .texto {
+    //     grid-area: texto;
+    //     p{
+    //     text-align: justify;
+    //     // font-size: 16px;
+    //     }
+    //     // text-align: justify;
+    // }
+
+  
+    #contenidoMobile {
+        padding-right: 16px;
+        padding-left: 16px;
+    
+
+        .foto1{
+        float: left;
+        margin-right: 16px;
+            margin-bottom: 16px;
+            width:152px/$ancho*100vw;
+            // border: solid black;
+            height: 189px/$alto*100vh ;
+            // background-color: blue;
+            background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-1.jpg);
+            background-size: cover;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+                    
+        }
+        
+        .foto2{
+            float: right;
+            margin-left: 16px;
+            margin-bottom: 16px;
+            width:152px/$ancho*100vw;
+            // border: solid black;
+            height: 189px/$alto*100vh ;
+            background-color: blue;
+            background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-2.jpg);
+            background-size: cover;
+            
+        }
+        .texto1 {
+        p{
+            text-align: justify;
+            }
+        }
+
+        .texto2 {
+            p{
+            text-align: justify;
+            }
         }
     }
-    .texto {
-        grid-area: texto;
-        text-align: justify;
-    }
+  
+}
+#contenidoDesktop{
+    display: none;
 }
 
 /*------------------FORMULARIO----------------*/
@@ -519,6 +566,10 @@ $anchoDesktop:1440px;
                 max-width: 340px;
                 margin-right: 16px/$anchoDesktop*100vw;
                 padding-top: 32px/$altoDesktop*100vh;
+
+                h2{
+                    font-size: 16px;
+                }
                 
                 .boton{
                     background-color: $color-titulo-secciones;
@@ -546,10 +597,7 @@ $anchoDesktop:1440px;
 
     .personalizados{
         width: 100%; //
-        padding-top: 601px/$altoDesktop*100vh;
         .tituloPersonalizado{
-            height: 175px;
-            width: 693px;
             text-align: center;
             margin: auto;
 
@@ -638,45 +686,79 @@ $anchoDesktop:1440px;
     }
 
     /*---------------SOBRE NOSOTROS---------*/
+    #contenidoDesktop{
+        display: block;
+    }
+
+    #contenidoMobile{
+        display: none;
+    }
+
     .sectionWrapper{
-        height: 684px/$altoDesktop*100vh;
-        .contenido{
+        // height: 684px/$altoDesktop*100vh;
+        max-width: 1440px; //
+        margin-left:auto;
+        margin-right: auto;
+
+       
+    
+        #contenidoDesktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             display: grid;
             grid-template-areas: "foto1 texto foto2"!important;
             grid-template-columns: 25% 50% 25% !important;
-            grid-template-rows: 455px/$altoDesktop*100vh!important;
-            border: solid black;
+            grid-template-rows: auto;
+            // grid-template-rows: 455px/$altoDesktop*100vh!important;
+            // border: solid black;
+            margin-bottom: 2px;
             
             .foto1{
                 grid-area:foto1;
                 width: 343px/$anchoDesktop*100vw;
+                max-width: 343px;
                 height: 416px/$altoDesktop*100vh;
-                background-color: red;
-                margin-bottom: 0;
+                // width: auto;
+                // background-color: red;
+                margin-right: 16px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+                background-image: url("../assets/img/SobreNosotros/Sobre-nosotros-1.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: center;
             }
 
             .foto2{
                 grid-area:foto2;
                 width: 343px/$anchoDesktop*100vw;
+                max-width: 343px;
                 height: 416px/$altoDesktop*100vh;
-                background-color: red;
+                // background-color: red;
+                margin-left: 16px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+                background-image: url("../assets/img/SobreNosotros/Sobre-nosotros-2.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position-x: center;
             }
             .texto {
                 grid-area: texto;
                 text-align: justify;
-                height: 416px/$altoDesktop*100vh;
+                // height: 416px/$altoDesktop*100vh;
                 display: flex;
                flex-direction: column;
-                align-items: center;
+                // align-items: center;
                 justify-content: center;
+                p{
+                    font-size: 16px;
+                }
                 
             }
         }
