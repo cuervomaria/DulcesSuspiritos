@@ -39,7 +39,7 @@ nav {
 }
 
 .navbar-nav {
-  padding-left: 43%;
+  padding-left: 40%;
 }
 
 .dropdown-item:hover {
@@ -83,8 +83,13 @@ nav {
   .card-img-top {
     width: 100%;
     height: 21.4rem;
-  }
+    object-fit: cover;
+    object-position: center;
   
+  }
+
+  
+
   .galeria--espacio {
     padding-top: 20px;
   }
@@ -118,21 +123,7 @@ nav {
     opacity: 0;
   }
 
-  /* ------- Imagen Card como background image----------*/
-  .huevoRocklets{
-    background-image: url("../assets/img/4 - Festividades/2-F - Huevos Rocklets.jpg");
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
-  }
-  .panDulce{
-    background-image: url("../assets/img/4 - Festividades/4-F-Pan Dulce-1.jpg");
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
-  }
 
-  /* ------- Imagen Card como background image----------*/
   
   /* -------------------- Fin Galeria -------------------------- */
 
@@ -167,29 +158,45 @@ nav {
     margin-top: 2%;
     width: 100%;
     height: 70%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .descripcion--img--xl {
     margin-top: 2%;
     width: 100%;
     height: 58%;
+    object-fit: cover;
+    object-position: center;
   }
   .descripcion--img--md {
     margin-top: 2%;
     width: 100%;
     height: 65%;
+    object-fit: cover;
+    object-position: center;
+
   }
 
   .descripcion--img--sm {
     margin-top: 5%;
     width: 100%;
     height: 95%;
+    object-fit: cover;
+    object-position: center;
   }
   .descripcion--img--otra {
     margin-top: 5%;
     width: 100%;
     height: 100%;
+     object-fit: cover;
+     object-position: center;
   }
+
+  .position-bottom {
+    object-position: bottom;
+  }
+
 
   .agrandar {
     margin-top: 2%;
