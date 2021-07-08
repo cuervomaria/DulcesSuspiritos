@@ -43,7 +43,7 @@ p{
     //top: -111px;
     height: 100vh;
     width: 100vw;
-    background-color: $color-secundario;
+    //background-color: $color-secundario;
     background-image: url(../assets/img/Foto-portada.jpg);
     background-size: cover;
     background-position-x: center;
@@ -165,10 +165,14 @@ p{
         color: $color-secundario;
       
     }
-    button {
+    a{
         position: absolute;
-        background-color:$color-principal ;
         bottom: 112px/$alto*100vh;
+    
+    button {
+        // position: absolute;
+        background-color:$color-principal ;
+      
         border-radius: 4px;
         border: none;
         font-size: 15px;
@@ -176,6 +180,7 @@ p{
         width: 240px;
         height: 36px;
     }
+}
     
 }
 
@@ -455,7 +460,7 @@ footer{
             width:152px/$ancho*100vw;
             // border: solid black;
             height: 189px/$alto*100vh ;
-            background-color: blue;
+            //background-color: blue;
             background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-2.jpg);
             background-size: cover;
             
@@ -660,7 +665,7 @@ $anchoDesktop:1440px;
             //  height: 905px/$altoDesktop*100vh !important;
             width: 100%; //
             height: 2/3*100vw !important;
-             background-color: $color-linea;
+            // background-color: $color-linea;
             
         } 
     }
