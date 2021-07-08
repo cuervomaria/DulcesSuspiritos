@@ -26,7 +26,6 @@ p {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #8951AD;
   background-image: url(../assets/img/Foto-portada.jpg);
   background-size: cover;
   background-position-x: center;
@@ -119,16 +118,17 @@ p {
   .personalizados h2 {
     text-align: center;
     color: #8951AD; }
-  .personalizados button {
+  .personalizados a {
     position: absolute;
-    background-color: #F471B7;
-    bottom: 17.5vh;
-    border-radius: 4px;
-    border: none;
-    font-size: 15px;
-    color: white;
-    width: 240px;
-    height: 36px; }
+    bottom: 17.5vh; }
+    .personalizados a button {
+      background-color: #F471B7;
+      border-radius: 4px;
+      border: none;
+      font-size: 15px;
+      color: white;
+      width: 240px;
+      height: 36px; }
 
 .seccionCondiciones {
   height: 52.5vh;
@@ -284,7 +284,6 @@ footer {
       margin-bottom: 16px;
       width: 42.22222vw;
       height: 29.53125vh;
-      background-color: blue;
       background-image: url(../assets/img/SobreNosotros/Sobre-nosotros-2.jpg);
       background-size: cover; }
     .sectionWrapper #contenidoMobile .texto1 p {
@@ -411,8 +410,7 @@ footer {
       font-size: 20px; }
     .instagramFeed iframe {
       width: 100%;
-      height: 66.66667vw !important;
-      background-color: #FEBF55; }
+      height: 66.66667vw !important; }
   footer {
     padding-top: 4.21053vh;
     padding-left: 33.54167vw;
